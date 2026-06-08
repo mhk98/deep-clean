@@ -1,3 +1,5 @@
+import TranslateWidget from "./TranslateWidget";
+
 const services = [
   {
     title: "تنظيف الكنَب",
@@ -95,7 +97,7 @@ export default function Home() {
       <header className="relative z-30">
         <div className="bg-[#0d274d] text-white shadow-[0_3px_8px_rgba(13,39,77,.35)]">
           <div
-            className="ltr mx-auto grid min-h-[86px] max-w-6xl grid-cols-1 items-center gap-4 px-5 py-3 md:grid-cols-[150px_1fr_180px]"
+            className="ltr mx-auto grid min-h-[86px] max-w-6xl grid-cols-1 items-center gap-4 px-5 py-3 md:grid-cols-[150px_1fr_150px_180px]"
             dir="ltr"
           >
             <div className="hidden md:block" />
@@ -117,6 +119,9 @@ export default function Home() {
               <span>f</span>
               <span>◎</span>
               <span>◔</span>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <TranslateWidget />
             </div>
           </div>
         </div>
@@ -143,21 +148,20 @@ export default function Home() {
                 الرئيسية
               </a>
               <a
-                className="hidden items-center gap-3 text-lg font-bold text-[#0d274d] md:inline-flex"
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
                 href="#services"
               >
-                <span>الخدمات</span>
-                <span className="text-xl">⌄</span>
+                الخدمات
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="#contact"
+                href="/contact"
               >
                 اتصل بنا
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="#about"
+                href="/about"
               >
                 عن الشركة
               </a>

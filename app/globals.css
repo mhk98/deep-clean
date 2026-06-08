@@ -15,13 +15,15 @@
 
 html {
   scroll-behavior: smooth;
+  margin-top: 0 !important;
 }
 
 body {
   margin: 0;
+  top: 0 !important;
   background: #ffffff;
   color: var(--ink);
-  font-family: "Tahoma", "Arial", sans-serif;
+  font-family: "Segoe UI", "Tahoma", "Arial", sans-serif;
 }
 
 button,
@@ -31,6 +33,52 @@ a {
 
 .ltr {
   direction: ltr;
+}
+
+.translate-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  color: #ffffff;
+  direction: ltr;
+}
+
+.translate-label {
+  color: #ffd366;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.translate-select {
+  height: 32px;
+  border: 1px solid rgba(255, 211, 102, 0.7);
+  border-radius: 4px;
+  background: #ffffff;
+  color: #0d274d;
+  font-family: "Tahoma", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  outline: none;
+}
+
+.translate-widget .skiptranslate,
+.translate-widget .goog-te-gadget {
+  display: none !important;
+}
+
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate,
+.skiptranslate iframe,
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+body[style] {
+  top: 0 !important;
 }
 
 .section-title-line {
