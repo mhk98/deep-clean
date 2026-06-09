@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Golden Touch Cleaning",
+  title: "Soft Touch Cleaning",
   description: "Professional cleaning services across Kuwait.",
 };
 

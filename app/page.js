@@ -1,3 +1,4 @@
+import Link from "next/link";
 import TranslateWidget from "./TranslateWidget";
 
 const services = [
@@ -59,7 +60,7 @@ const faqs = [
   "ما هي المناطق التي تغطيها في الكويت؟",
 ];
 
-function Button({ children, variant = "gold" }) {
+function Button({ children, variant = "gold", href = "/contact", target, rel }) {
   return (
     <a
       className={`inline-flex h-12 min-w-36 items-center justify-center gap-3 rounded-none px-7 text-sm font-bold shadow-[0_4px_14px_rgba(13,39,77,.18)] transition ${
@@ -67,7 +68,9 @@ function Button({ children, variant = "gold" }) {
           ? "rounded-br-3xl bg-[#ffd366] text-[#092346] hover:bg-[#f8be43]"
           : "bg-[#0d274d] text-[#ffd366] hover:bg-[#082142]"
       }`}
-      href="#contact"
+      href={href}
+      target={target}
+      rel={rel}
     >
       <span>←</span>
       {children}
@@ -77,17 +80,19 @@ function Button({ children, variant = "gold" }) {
 
 function LogoBadge() {
   return (
-    <div className="grid h-36 w-36 place-items-center rounded-full border-[6px] border-white bg-[#050505] p-2 text-center shadow-[0_0_22px_rgba(255,255,255,.8)]">
-      <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
-        <div className="text-[13px] font-black leading-none text-[#f8be43]">
-          <div className="text-3xl">⌂</div>
-          Golden Touch
-          <div className="mt-1 text-[8px] tracking-wide text-white">
-            CLEANING SERVICES
+    <Link href="/" className="block">
+      <div className="grid h-36 w-36 place-items-center rounded-full border-[6px] border-white bg-[#050505] p-2 text-center shadow-[0_0_22px_rgba(255,255,255,.8)]">
+        <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
+          <div className="text-[13px] font-black leading-none text-[#f8be43]">
+            <div className="text-3xl">⌂</div>
+            Soft Touch
+            <div className="mt-1 text-[8px] tracking-wide text-white">
+              CLEANING SERVICES
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -103,8 +108,8 @@ export default function Home() {
             <div className="hidden md:block" />
             <div className="space-y-2 text-center text-sm text-slate-100">
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
-                <span>☎ +965 9955 2956</span>
-                <span>✉ goldentouchcleaningkw@gmail.com</span>
+                <span>☎ +96594026150</span>
+                <span>✉ awesa7547@gmail</span>
               </div>
               <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-6">
                 <span>📍</span>
@@ -149,7 +154,7 @@ export default function Home() {
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="#services"
+                href="/services"
               >
                 الخدمات
               </a>
@@ -168,7 +173,7 @@ export default function Home() {
             </div>
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
-              <Button variant="outline">اتصل الآن</Button>
+              <Button variant="outline" href="https://wa.me/96594026150" target="_blank" rel="noopener noreferrer">اتصل الآن</Button>
               <Button>احجز الآن</Button>
             </div>
           </div>
@@ -206,7 +211,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex justify-center">
               <Button>احجز الآن</Button>
-              <Button variant="outline">اتصل الآن</Button>
+              <Button variant="outline" href="https://wa.me/96594026150" target="_blank" rel="noopener noreferrer">اتصل الآن</Button>
             </div>
           </div>
         </div>
@@ -250,14 +255,16 @@ export default function Home() {
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
-                href="#contact"
+                href="/contact"
               >
                 <span>←</span>
                 احجز الآن
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
-                href="#contact"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>←</span>
                 اتصل الآن
@@ -359,14 +366,16 @@ export default function Home() {
             <div className="mt-8 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
               <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 border-2 border-[#f8be43] bg-white px-7 text-sm font-bold text-[#0d274d] transition hover:bg-slate-50"
-                href="#contact"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>←</span>
                 اتصل الآن
               </a>
               <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-bold text-[#092346] transition hover:bg-[#f8be43]"
-                href="#contact"
+                href="/contact"
               >
                 <span>←</span>
                 احجز الآن
@@ -454,14 +463,16 @@ export default function Home() {
             <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
               <a
                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
-                href="#contact"
+                href="/contact"
               >
                 <span>←</span>
                 احجز الآن
               </a>
               <a
                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
-                href="#contact"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>←</span>
                 اتصل الآن
@@ -526,14 +537,16 @@ export default function Home() {
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
-                href="#contact"
+                href="/contact"
               >
                 <span>←</span>
                 احجز الآن
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
-                href="#contact"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>←</span>
                 اتصل الآن
@@ -620,14 +633,16 @@ export default function Home() {
             <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
-                href="#contact"
+                href="/contact"
               >
                 <span>←</span>
                 احجز الآن
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-white px-8 text-lg font-black text-[#0d274d]"
-                href="tel:+96599552956"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>←</span>
                 اتصل الآن

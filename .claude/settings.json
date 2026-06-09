@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"h:\\\\soft-touch\\\\app\\\\services\")"
+    ],
+    "additionalDirectories": [
+      "h:\\soft-touch\\app"
+    ]
+  }
+}

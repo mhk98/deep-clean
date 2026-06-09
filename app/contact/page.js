@@ -1,18 +1,21 @@
+import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
 
 function LogoBadge() {
   return (
-    <div className="grid h-32 w-32 place-items-center rounded-full border-[6px] border-white bg-[#050505] p-2 text-center shadow-[0_0_22px_rgba(255,255,255,.8)]">
-      <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
-        <div className="text-[12px] font-black leading-none text-[#f8be43]">
-          <div className="text-3xl">⌂</div>
-          Golden Touch
-          <div className="mt-1 text-[8px] tracking-wide text-white">
-            CLEANING SERVICES
+    <Link href="/" className="block">
+      <div className="grid h-32 w-32 place-items-center rounded-full border-[6px] border-white bg-[#050505] p-2 text-center shadow-[0_0_22px_rgba(255,255,255,.8)]">
+        <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
+          <div className="text-[12px] font-black leading-none text-[#f8be43]">
+            <div className="text-3xl">⌂</div>
+            Soft Touch
+            <div className="mt-1 text-[8px] tracking-wide text-white">
+              CLEANING SERVICES
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -27,8 +30,8 @@ function Header() {
           <div className="hidden md:block" />
           <div className="space-y-1 text-center text-xs text-slate-100">
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
-              <span>☎ +965 9955 2956</span>
-              <span>✉ goldentouchcleaningkw@gmail.com</span>
+              <span>☎ +96594026150</span>
+              <span>✉ awesa7547@gmail</span>
             </div>
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-5">
               <span>📍</span>
@@ -67,7 +70,7 @@ function Header() {
             </a>
             <a
               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-              href="/#services"
+              href="/services"
             >
               Services
             </a>
@@ -88,13 +91,15 @@ function Header() {
           <div className="hidden items-center gap-4 lg:flex">
             <a
               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
-              href="tel:+96599552956"
+              href="https://wa.me/96594026150"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Call now <span>→</span>
             </a>
             <a
               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
-              href="#contact-form"
+              href="/contact"
             >
               Book now <span>→</span>
             </a>
@@ -118,13 +123,17 @@ function Footer() {
           <div className="mt-8 inline-flex overflow-hidden rounded-br-[28px] rounded-tl-[28px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
             <a
               className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-white px-7 text-sm font-black text-[#0d274d]"
-              href="tel:+96599552956"
+              href="https://wa.me/96594026150"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Call now <span>→</span>
             </a>
             <a
               className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-black text-[#092346]"
-              href="#contact-form"
+              href="https://wa.me/96594026150"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book now <span>→</span>
             </a>
@@ -261,7 +270,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-black">Call Us</h3>
-                <p className="mt-3 text-base text-[#707070]">+965 9955 2956</p>
+                <p className="mt-3 text-base text-[#707070]">+96594026150</p>
               </div>
               <div>
                 <h3 className="text-2xl font-black">Email Us</h3>
@@ -315,7 +324,7 @@ export default function ContactPage() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps?q=Al%20Farwaniya%20Kuwait&output=embed"
-          title="Golden Touch location map"
+          title="Soft Touch location map"
         />
       </section>
 
