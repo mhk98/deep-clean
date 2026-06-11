@@ -211,7 +211,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[12px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-            Soft Touch
+            Deep Clean
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -240,8 +240,8 @@ function Header() {
               <span>📍</span>
               <span>
                 Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraij Commercial Complex, Nearby Asfour
-                Canary Restaurant
+                Shop No. 26, Al Khuraij Commercial Complex, Nearby Asfour Canary
+                Restaurant
               </span>
             </div>
           </div>
@@ -322,7 +322,9 @@ function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-sm font-black text-[#ffd366]">Let's talk</p>
-          <h2 className="mt-6 text-2xl font-black">Clean, fresh, and flawless</h2>
+          <h2 className="mt-6 text-2xl font-black">
+            Clean, fresh, and flawless
+          </h2>
           <p className="mt-6 text-3xl font-black leading-tight text-[#ffd366]">
             Your space is about to shine like never before.
           </p>
@@ -474,9 +476,7 @@ function ServiceDetail({ service }) {
             🔥 {service.priceRange}
           </p>
         </div>
-        <p className="mt-3 text-sm text-[#444]">
-          🟠 {service.packageNote}
-        </p>
+        <p className="mt-3 text-sm text-[#444]">🟠 {service.packageNote}</p>
       </div>
     </div>
   );
@@ -487,7 +487,10 @@ export default function ServicesPage() {
   const activeService = services.find((s) => s.id === activeId);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-white text-[#0d274d]" dir="ltr">
+    <main
+      className="min-h-screen overflow-hidden bg-white text-[#0d274d]"
+      dir="ltr"
+    >
       <Header />
 
       <section className="px-5 py-16">

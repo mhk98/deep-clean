@@ -60,7 +60,13 @@ const faqs = [
   "ما هي المناطق التي تغطيها في الكويت؟",
 ];
 
-function Button({ children, variant = "gold", href = "/contact", target, rel }) {
+function Button({
+  children,
+  variant = "gold",
+  href = "/contact",
+  target,
+  rel,
+}) {
   return (
     <a
       className={`inline-flex h-12 min-w-36 items-center justify-center gap-3 rounded-none px-7 text-sm font-bold shadow-[0_4px_14px_rgba(13,39,77,.18)] transition ${
@@ -85,7 +91,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[13px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-            Soft Touch
+            Deep Clean
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -173,7 +179,14 @@ export default function Home() {
             </div>
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
-              <Button variant="outline" href="https://wa.me/96594026150" target="_blank" rel="noopener noreferrer">اتصل الآن</Button>
+              <Button
+                variant="outline"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                اتصل الآن
+              </Button>
               <Button>احجز الآن</Button>
             </div>
           </div>
@@ -211,7 +224,14 @@ export default function Home() {
             </p>
             <div className="mt-10 flex justify-center">
               <Button>احجز الآن</Button>
-              <Button variant="outline" href="https://wa.me/96594026150" target="_blank" rel="noopener noreferrer">اتصل الآن</Button>
+              <Button
+                variant="outline"
+                href="https://wa.me/96594026150"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                اتصل الآن
+              </Button>
             </div>
           </div>
         </div>
@@ -501,7 +521,8 @@ export default function Home() {
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Government <span className="font-black text-[#0d274d]">We Cover</span>
+                Government{" "}
+                <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
                 <div className="h-full w-24 bg-[#0d274d]" />
@@ -593,7 +614,9 @@ export default function Home() {
                   <h4 className="text-lg font-black text-[#b14f24]">
                     ✓ {title}
                   </h4>
-                  <p className="mt-2 text-base leading-8 text-[#5e7189]">{text}</p>
+                  <p className="mt-2 text-base leading-8 text-[#5e7189]">
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -670,7 +693,9 @@ export default function Home() {
             </div>
 
             <div className="text-right" dir="rtl">
-              <h3 className="text-2xl font-black text-[#ffd366]">روابط سريعة</h3>
+              <h3 className="text-2xl font-black text-[#ffd366]">
+                روابط سريعة
+              </h3>
               <ul className="mt-8 space-y-0 text-base font-bold">
                 {["الرئيسية", "الخدمات", "اتصل بنا", "عن الشركة"].map(
                   (link, index) => (
@@ -684,7 +709,7 @@ export default function Home() {
                     >
                       {link}
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </div>
