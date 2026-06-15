@@ -283,7 +283,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-black">Email Us</h3>
                 <p className="mt-3 text-base text-[#707070]">
-                  support@goldentouchcleaningkw.com
+                  awesa7547@gmail
                 </p>
               </div>
             </div>

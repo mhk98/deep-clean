@@ -3,36 +3,36 @@ import TranslateWidget from "./TranslateWidget";
 
 const services = [
   {
-    title: "تنظيف الكنَب",
+    title: "Sofa Cleaning",
     image:
       "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80",
-    text: "تنظيف عميق وآمن يزيل الأتربة والبقع ويحافظ على جودة المفروشات والأسطح.",
+    text: "Deep and safe cleaning removes dust and stains while preserving upholstery and surfaces.",
   },
   {
-    title: "تنظيف الثريا",
+    title: "Chandelier Cleaning",
     image:
       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
-    text: "تنظيف دقيق للثريات والزجاج مع عناية كاملة بالتفاصيل اللامعة.",
+    text: "Precise chandelier and glass cleaning with full attention to sparkling details.",
   },
   {
-    title: "تنظيف المنازل",
+    title: "Home Cleaning",
     image:
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80",
-    text: "خدمة تنظيف منزلية متكاملة للمطابخ والغرف والصالات بأدوات احترافية.",
+    text: "Complete home cleaning for kitchens, rooms, and living areas using professional equipment.",
   },
   {
-    title: "تنظيف النوافذ",
+    title: "Window Cleaning",
     image:
       "https://images.unsplash.com/photo-1596394723269-b2cbca4e6313?auto=format&fit=crop&w=1000&q=80",
-    text: "تنظيف النوافذ والإطارات وإزالة الغبار والبقع للحصول على لمعان واضح.",
+    text: "Window and frame cleaning with dust and stain removal for a clear shine.",
   },
 ];
 
 const reasons = [
-  ["خبرة فنية", "فريق مدرب على تنظيف المنازل والمكاتب بعناية واهتمام."],
-  ["خدمة سريعة وموثوقة", "نصل في الموعد وننفذ العمل بمعايير واضحة."],
-  ["مواد صديقة للبيئة", "منظفات آمنة للاستخدام اليومي داخل المنزل."],
-  ["متوفر في جميع أنحاء الكويت", "نغطي أغلب المناطق بخيارات حجز مرنة."],
+  ["Skilled Experts", "A trained team for home and office cleaning with care and attention."],
+  ["Fast & Reliable Service", "We arrive on time and work with clear quality standards."],
+  ["Eco-Friendly Products", "Safe cleaning supplies for daily use inside your home."],
+  ["Available Across Kuwait", "We cover most areas with flexible booking options."],
 ];
 
 const partners = [
@@ -52,12 +52,12 @@ const testimonials = [
 ];
 
 const faqs = [
-  "كيف يمكنني حجز خدمة التنظيف؟",
-  "هل توفرون عمالة منزلية؟",
-  "كم يستغرق تنظيف المنزل؟",
-  "هل تقدمون ضمان للخدمة؟",
-  "طرق دفع خدمات التنظيف لديكم؟",
-  "ما هي المناطق التي تغطيها في الكويت؟",
+  "How can I book a cleaning service?",
+  "Do you provide house cleaning staff?",
+  "How long does home cleaning take?",
+  "Do you offer a service guarantee?",
+  "What payment methods do you accept?",
+  "Which areas do you cover in Kuwait?",
 ];
 
 function Button({
@@ -148,33 +148,30 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className="flex flex-1 items-center justify-center gap-8"
-              dir="ltr"
-            >
+            <div className="flex flex-1 items-center justify-center gap-8" dir="ltr">
               <a
                 className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d]"
                 href="#home"
               >
-                الرئيسية
+                Home
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
                 href="/services"
               >
-                الخدمات
+                Services
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
                 href="/contact"
               >
-                اتصل بنا
+                Contact
               </a>
               <a
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
                 href="/about"
               >
-                عن الشركة
+                About
               </a>
             </div>
 
@@ -185,9 +182,9 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                اتصل الآن
+                Call Now
               </Button>
-              <Button>احجز الآن</Button>
+              <Button>Book Now</Button>
             </div>
           </div>
         </nav>
@@ -207,30 +204,30 @@ export default function Home() {
         <div className="mx-auto flex min-h-[620px] max-w-6xl items-center justify-center px-5 pb-24 pt-16">
           <div className="max-w-3xl text-center">
             <p className="mb-7 text-lg font-black text-red-600">
-              # أفضل شركة تنظيف في الكويت
+              # Kuwait’s Top Cleaning Company
             </p>
             <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              شركة اللمسة الذهبية للتنظيف العام
+              Deep Clean General Cleaning
               <br />
-              للمباني
+              Company for Buildings
             </h1>
             <h2 className="mt-10 text-2xl font-black text-[#102b55] md:text-3xl">
-              تنظيف عالي الجودة للمنازل والأعمال
+              High-quality cleaning for homes and businesses
             </h2>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#213d63]">
-              استمتع بمساحات نظيفة تمامًا مع خدمات التنظيف الاحترافية لدينا. من
-              المنازل إلى المكاتب، نقدم تنظيفًا عميقًا وموثوقًا وحيدًا يمكنك
-              الاعتماد عليه.
+              Enjoy completely clean spaces with our professional cleaning
+              services. From homes to offices, we provide deep and reliable
+              cleaning you can trust.
             </p>
-            <div className="mt-10 flex justify-center">
-              <Button>احجز الآن</Button>
+            <div className="mt-10 flex justify-center gap-4">
+              <Button>Book Now</Button>
               <Button
                 variant="outline"
                 href="https://wa.me/96594026150"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                اتصل الآن
+                Call Now
               </Button>
             </div>
           </div>
@@ -278,7 +275,7 @@ export default function Home() {
                 href="/contact"
               >
                 <span>←</span>
-                احجز الآن
+                Book Now
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
@@ -287,7 +284,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <span>←</span>
-                اتصل الآن
+                Call Now
               </a>
             </div>
           </div>
@@ -295,19 +292,19 @@ export default function Home() {
           <div className="order-1 text-center md:order-2 md:text-right">
             <p className="text-2xl font-black text-[#24882e]">Committed!</p>
             <h2 className="mt-7 text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              خبراء تنظيف موثوقون في
+              Trusted Cleaning Experts in
               <br />
-              الكويت
+              Kuwait
             </h2>
             <p className="mt-10 text-lg leading-9 text-[#18365e]">
-              نقدم خدمات تنظيف موثوقة وعالية الجودة يمكنك الاعتماد عليها في كل
-              مرة
+              We provide trusted, high-quality cleaning services you can rely on
+              every time.
             </p>
             <div className="mt-9 grid overflow-hidden rounded-bl-[28px] rounded-tr-[28px] border border-[#f1dc97] bg-white text-center shadow-sm md:max-w-xl md:grid-cols-3">
               {[
-                ["500 +", "أكثر من 500 عميل راضي"],
-                ["500 +", "أكثر من 500 عميل راضي"],
-                ["5 Y", "سنوات من الخبرة الاحترافية"],
+                ["500 +", "Satisfied customers"],
+                ["500 +", "Professional cleaning jobs"],
+                ["5 Y", "Years of experience"],
               ].map(([value, label], index) => (
                 <div
                   className="border-b border-[#c7cbd1] px-7 py-5 last:border-b-0 md:border-b-0 md:border-l-4 md:last:border-l-0"
@@ -329,17 +326,17 @@ export default function Home() {
       <section id="services" className="bg-[#fff4d8] px-5 py-24 md:py-28">
         <div className="mx-auto max-w-6xl text-center">
           <p className="section-title-line text-sm font-bold text-[#f0a600]">
-            المميزة خدماتنا عالية
+            Premium Services
           </p>
           <h2 className="mt-4 text-3xl font-black text-[#0d274d]">
-            نستمتع بتقديم خدمات مميزة
+            We love delivering standout cleaning
           </h2>
 
           <div className="services-slider ltr mx-auto mt-16 max-w-5xl overflow-hidden">
             <div className="services-track flex w-max gap-10">
               {[...services, ...services].map((service, index) => (
                 <article
-                  className="w-[320px] shrink-0 bg-white text-right shadow-[0_10px_22px_rgba(13,39,77,.08)] md:w-[470px]"
+                  className="w-[320px] shrink-0 bg-white shadow-[0_10px_22px_rgba(13,39,77,.08)] md:w-[470px]"
                   key={service.title + index}
                 >
                   <img
@@ -347,8 +344,8 @@ export default function Home() {
                     className="h-48 w-full object-cover md:h-56"
                     src={service.image}
                   />
-                  <div className="p-8" dir="rtl">
-                    <h3 className="border-r-2 border-[#0d274d] pr-5 text-2xl font-black text-[#0d274d]">
+                  <div className="p-8" dir="ltr">
+                    <h3 className="border-l-2 border-[#0d274d] pl-5 text-2xl font-black text-[#0d274d]">
                       {service.title}
                     </h3>
                     <p className="mt-7 text-lg leading-8 text-[#828b98]">
@@ -361,7 +358,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16">
-            <Button>كل الخدمات</Button>
+            <Button>All Services</Button>
           </div>
         </div>
       </section>
@@ -377,9 +374,7 @@ export default function Home() {
                 <div key={title}>
                   <div className="mb-3 text-2xl text-[#f8be43]">✦</div>
                   <h3 className="font-bold text-[#f8be43]">{title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-200">
-                    {text}
-                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">{text}</p>
                 </div>
               ))}
             </div>
@@ -391,14 +386,14 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <span>←</span>
-                اتصل الآن
+                Call Now
               </a>
               <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-bold text-[#092346] transition hover:bg-[#f8be43]"
                 href="/contact"
               >
                 <span>←</span>
-                احجز الآن
+                Book Now
               </a>
             </div>
           </div>
@@ -431,16 +426,14 @@ export default function Home() {
             <div className="testimonial-track flex w-max gap-5">
               {[...testimonials, ...testimonials].map((name, index) => (
                 <article
-                  className="relative min-h-[178px] w-[330px] shrink-0 rounded-sm bg-white p-8 text-right shadow-[0_8px_25px_rgba(13,39,77,.08)] md:w-[370px]"
-                  dir="rtl"
+                  className="relative min-h-[178px] w-[330px] shrink-0 rounded-sm bg-white p-8 text-left shadow-[0_8px_25px_rgba(13,39,77,.08)] md:w-[370px]"
+                  dir="ltr"
                   key={name + index}
                 >
-                  <div className="text-xl tracking-[4px] text-[#f8be43]">
-                    ★★★★★
-                  </div>
+                  <div className="text-xl tracking-[4px] text-[#f8be43]">★★★★★</div>
                   <p className="mt-6 text-sm leading-7 text-[#687486]">
-                    خدمة ممتازة وفريق محترف. تم التنظيف بعناية وفي الوقت المحدد،
-                    وكانت النتيجة رائعة.
+                    Excellent service and a professional team. They cleaned carefully
+                    and on time, and the result was amazing.
                   </p>
                   <strong className="mt-7 block text-sm text-black">
                     — {name}
@@ -465,7 +458,8 @@ export default function Home() {
                   Before Services Limited
                 </p>
                 <p className="mt-4 text-sm leading-6 text-slate-200">
-                  احصل على خصم حتى 20% على أول طلب تنظيف مع فريق اللمسة الذهبية.
+                  Get up to 20% off your first cleaning order with the Deep Clean
+                  team.
                 </p>
               </div>
               <div className="relative hidden h-full min-h-48 bg-[#f8be43] md:block">
@@ -486,7 +480,7 @@ export default function Home() {
                 href="/contact"
               >
                 <span>←</span>
-                احجز الآن
+                Book Now
               </a>
               <a
                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
@@ -495,7 +489,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <span>←</span>
-                اتصل الآن
+                Call Now
               </a>
             </div>
           </div>
@@ -506,9 +500,7 @@ export default function Home() {
                 className="flex h-32 items-center justify-center gap-5 border-[6px] border-[#f0f1f3] bg-white text-xl font-black text-[#8f949b]"
                 key={partner.name}
               >
-                <span className="p-3 text-2xl text-[#70757c]">
-                  {partner.mark}
-                </span>
+                <span className="p-3 text-2xl text-[#70757c]">{partner.mark}</span>
                 <span>{partner.name}</span>
               </div>
             ))}
@@ -521,8 +513,7 @@ export default function Home() {
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Government{" "}
-                <span className="font-black text-[#0d274d]">We Cover</span>
+                Government <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
                 <div className="h-full w-24 bg-[#0d274d]" />
@@ -530,21 +521,22 @@ export default function Home() {
             </div>
 
             <h3 className="mt-16 text-2xl font-black text-[#c72424]">
-              نغطي جميع محافظات الكويت
+              We cover all governorates of Kuwait
             </h3>
             <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-[#4c5d76] md:mx-0">
-              نقدم خدمات التنظيف الاحترافية في جميع محافظات الكويت. أينما كنت،
-              فريقنا جاهز لخدمتك بسرعة وكفاءة وبأعلى جودة.
+              We deliver professional cleaning services in all governorates of Kuwait.
+              Wherever you are, our team is ready to serve you quickly, efficiently,
+              and with the highest quality.
             </p>
 
             <ul className="mx-auto mt-10 max-w-xl text-base font-black leading-8 text-[#243955] md:mx-0">
               {[
-                "Al-Asimah Governorate → محافظة العاصمة",
-                "Hawalli Governorate → محافظة حولي",
-                "Farwaniya Governorate → محافظة الفروانية",
-                "Mubarak Al-Kabeer Governorate → محافظة مبارك الكبير",
-                "Al-Ahmadi Governorate → محافظة الأحمدي",
-                "Al-Jahra Governorate → محافظة الجهراء",
+                "Al-Asimah Governorate → Capital Governorate",
+                "Hawalli Governorate → Hawalli Governorate",
+                "Farwaniya Governorate → Farwaniya Governorate",
+                "Mubarak Al-Kabeer Governorate → Mubarak Al-Kabeer Governorate",
+                "Al-Ahmadi Governorate → Al-Ahmadi Governorate",
+                "Al-Jahra Governorate → Al-Jahra Governorate",
               ].map((area) => (
                 <li
                   className="border-b border-dashed border-[#d8cdb3] py-4 last:border-b-0"
@@ -561,7 +553,7 @@ export default function Home() {
                 href="/contact"
               >
                 <span>←</span>
-                احجز الآن
+                Book Now
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
@@ -570,18 +562,19 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <span>←</span>
-                اتصل الآن
+                Call Now
               </a>
             </div>
           </div>
 
-          <article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-right shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
+          <article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-left shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
             <h2 className="text-3xl font-black leading-tight text-[#9b1b1f]">
-              نقدم خدمات التنظيف في جميع أنحاء الكويت
+              We provide cleaning services across Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-              في شركة اللمسة الذهبية، نقدم خدمات تنظيف سريعة واحترافية في جميع
-              مناطق الكويت، مع ضمان أعلى مستوى من الجودة والنظافة في كل مرة.
+              At Deep Clean, we offer fast and professional cleaning services in
+              all areas of Kuwait, with a commitment to the highest standards of
+              hygiene and quality every time.
             </p>
 
             <h3 className="mt-8 text-2xl font-black text-[#1d6a29]">
@@ -591,8 +584,8 @@ export default function Home() {
               Abdullah Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha,
               Jaber Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya,
               Qurtuba, Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya,
-              Abdullah Al-Mubarak, Sabah Al-Nasser, and Firdous, Rumaithiya,
-              Salmiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
+              Abdullah Al-Mubarak, Sabah Al-Nasser, Firdous, Rumaithiya, Salmiya,
+              Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
             </p>
 
             <div className="mt-8 border-t border-[#d8d2c8] pt-8">
@@ -609,14 +602,10 @@ export default function Home() {
                   "Detailed & Hygienic Cleaning",
                   "Every corner is cleaned with care to ensure a fresh and healthy environment.",
                 ],
-              ].map(([title, text]) => (
-                <div className="mt-8 first:mt-0" key={title}>
-                  <h4 className="text-lg font-black text-[#b14f24]">
-                    ✓ {title}
-                  </h4>
-                  <p className="mt-2 text-base leading-8 text-[#5e7189]">
-                    {text}
-                  </p>
+              ].map((group) => (
+                <div className="mt-8 first:mt-0" key={group[0]}>
+                  <h4 className="text-lg font-black text-[#b14f24]">✓ {group[0]}</h4>
+                  <p className="mt-2 text-base leading-8 text-[#5e7189]">{group[1]}</p>
                 </div>
               ))}
             </div>
@@ -626,9 +615,7 @@ export default function Home() {
 
       <section id="faq" className="px-5 py-24">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-5xl font-black text-emerald-800">
-            📌 FAQ
-          </h2>
+          <h2 className="text-center text-5xl font-black text-emerald-800">📌 FAQ</h2>
           <div className="mt-14 grid gap-x-24 md:grid-cols-2">
             {faqs.map((faq) => (
               <button
@@ -645,12 +632,12 @@ export default function Home() {
       <footer id="contact" className="bg-[#0d274d] px-5 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <p className="text-base font-black text-[#ffd366]">دعنا نتحدث</p>
+            <p className="text-base font-black text-[#ffd366]">Let’s talk</p>
             <h2 className="mt-8 text-2xl font-black text-white">
-              نظيف، منعش، وخالٍ من العيوب
+              Clean, fresh, and flawless
             </h2>
             <p className="mt-8 text-3xl font-black leading-tight text-[#ffd366]">
-              مساحتك على وشك أن تتألق كما لم يحدث من قبل
+              Your space is about to shine like never before.
             </p>
 
             <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
@@ -659,7 +646,7 @@ export default function Home() {
                 href="/contact"
               >
                 <span>←</span>
-                احجز الآن
+                Book Now
               </a>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-white px-8 text-lg font-black text-[#0d274d]"
@@ -668,20 +655,18 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <span>←</span>
-                اتصل الآن
+                Call Now
               </a>
             </div>
           </div>
 
-          <div
-            className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]"
-            dir="ltr"
-          >
-            <div className="text-right" dir="rtl">
+          <div className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]" dir="ltr">
+            <div className="text-left">
               <LogoBadge />
               <p className="mt-8 max-w-sm text-base leading-8 text-white">
-                نقدم خدمات تنظيف موثوقة وعالية الجودة للمنازل والشركات. نضيف
-                لمسة ذهبية من النظافة والعناية والكمال على كل مساحة نخدمها.
+                We offer reliable, high-quality cleaning services for homes and
+                businesses. We bring a touch of pure cleanliness, care, and
+                perfection to every space we serve.
               </p>
               <div className="mt-8 flex gap-5 text-2xl font-black text-[#ffd366]">
                 <span>f</span>
@@ -692,32 +677,29 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-right" dir="rtl">
-              <h3 className="text-2xl font-black text-[#ffd366]">
-                روابط سريعة
-              </h3>
+            <div className="text-left">
+              <h3 className="text-2xl font-black text-[#ffd366]">Quick links</h3>
               <ul className="mt-8 space-y-0 text-base font-bold">
-                {["الرئيسية", "الخدمات", "اتصل بنا", "عن الشركة"].map(
-                  (link, index) => (
-                    <li
-                      className={`px-9 py-4 ${
-                        index === 0
-                          ? "border border-white text-[#ffd366]"
-                          : "text-white"
-                      }`}
-                      key={link}
-                    >
-                      {link}
-                    </li>
-                  ),
-                )}
+                {[
+                  "Home",
+                  "Services",
+                  "Contact",
+                  "About",
+                ].map((link, index) => (
+                  <li
+                    className={`px-9 py-4 ${
+                      index === 0 ? "border border-white text-[#ffd366]" : "text-white"
+                    }`}
+                    key={link}
+                  >
+                    {link}
+                  </li>
+                ))}
               </ul>
             </div>
 
-            <div className="text-right" dir="rtl">
-              <h3 className="text-2xl font-black text-[#ffd366]">
-                معلومات الاتصال
-              </h3>
+            <div className="text-left">
+              <h3 className="text-2xl font-black text-[#ffd366]">Contact information</h3>
               <p className="mt-8 text-base leading-8 text-white ltr">
                 Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
                 Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
@@ -725,13 +707,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-right" dir="rtl">
+            <div className="text-left">
               <h3 className="text-2xl font-black leading-tight text-[#ffd366]">
-                اشترك للحصول على عروض خاصة
+                Subscribe for special offers
               </h3>
               <p className="mt-8 text-base leading-8 text-white">
-                اشترك للحصول على نصائح تنظيف حصرية، وعروض خاصة، وآخر التحديثات
-                حول خدماتنا الاحترافية.
+                Subscribe to receive exclusive cleaning tips, special offers, and
+                the latest updates on our professional services.
               </p>
               <form className="mt-10 flex items-end gap-0">
                 <label className="sr-only" htmlFor="footer-email">
@@ -747,9 +729,9 @@ export default function Home() {
                   className="h-14 rounded-full bg-[#ffd366] px-8 text-sm font-black leading-5 text-[#0d274d]"
                   type="button"
                 >
-                  احصل على
+                  Get a
                   <br />
-                  عرض سعر
+                  Quote
                 </button>
               </form>
             </div>

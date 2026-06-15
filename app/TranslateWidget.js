@@ -23,8 +23,17 @@ export default function TranslateWidget() {
     }
 
     const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-    if (match?.[1]?.includes("/en")) {
-      setLanguage("en");
+    if (match) {
+      const value = match[1];
+      if (value.includes("/ar/en")) {
+        setLanguage("en");
+      } else if (value.includes("/en/ar")) {
+        setLanguage("ar");
+      } else if (value.includes("/en/en")) {
+        setLanguage("en");
+      }
+    } else {
+      setCookie("googtrans", "/en/ar");
     }
 
     if (window.google?.translate?.TranslateElement) {
@@ -34,7 +43,7 @@ export default function TranslateWidget() {
     window.googleTranslateElementInit = function googleTranslateElementInit() {
       new window.google.translate.TranslateElement(
         {
-          pageLanguage: "ar",
+          pageLanguage: "en",
           includedLanguages: "ar,en",
           autoDisplay: false,
         },
@@ -64,9 +73,9 @@ export default function TranslateWidget() {
     setLanguage(nextLanguage);
 
     if (nextLanguage === "en") {
-      setCookie("googtrans", "/ar/en");
+      setCookie("googtrans", "/en/en");
     } else {
-      setCookie("googtrans", "/ar/ar");
+      setCookie("googtrans", "/en/ar");
     }
 
     window.location.reload();

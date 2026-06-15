@@ -234,7 +234,7 @@ function Header() {
           <div className="space-y-1 text-center text-xs text-slate-100">
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
               <span>☎ +965 9955 2956</span>
-              <span>✉ goldentouchcleaningkw@gmail.com</span>
+              <span>✉ awesa7547@gmail</span>
             </div>
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-5">
               <span>📍</span>
