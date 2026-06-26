@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Deep Clean Cleaning",
+  title: "Al Nawras Plus Cleaning",
   description: "Professional cleaning services across Kuwait.",
 };
 

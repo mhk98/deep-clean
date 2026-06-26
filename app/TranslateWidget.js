@@ -8,33 +8,34 @@ function setCookie(name, value) {
 }
 
 export default function TranslateWidget() {
-  const [language, setLanguage] = useState("ar");
+const [language, setLanguage] = useState("ar");
 
-  useEffect(() => {
-    function removeTranslateGap() {
-      document.body.style.top = "0px";
-      document.documentElement.style.marginTop = "0px";
+   useEffect(() => {
+     function removeTranslateGap() {
+       document.body.style.top = "0px";
+       document.documentElement.style.marginTop = "0px";
 
-      document.querySelectorAll("body > .skiptranslate").forEach((element) => {
-        element.style.display = "none";
-        element.style.height = "0";
-        element.style.visibility = "hidden";
-      });
-    }
+       document.querySelectorAll("body > .skiptranslate").forEach((element) => {
+         element.style.display = "none";
+         element.style.height = "0";
+         element.style.visibility = "hidden";
+       });
+     }
 
-    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-    if (match) {
-      const value = match[1];
-      if (value.includes("/ar/en")) {
-        setLanguage("en");
-      } else if (value.includes("/en/ar")) {
-        setLanguage("ar");
-      } else if (value.includes("/en/en")) {
-        setLanguage("en");
-      }
-    } else {
-      setCookie("googtrans", "/en/ar");
-    }
+     const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+     if (match) {
+       const value = match[1];
+       if (value.includes("/ar/en")) {
+         setLanguage("en");
+       } else if (value.includes("/en/ar")) {
+         setLanguage("ar");
+       } else if (value.includes("/en/en")) {
+         setLanguage("en");
+       }
+     } else {
+       setLanguage("ar");
+       setCookie("googtrans", "/en/ar");
+     }
 
     if (window.google?.translate?.TranslateElement) {
       return;

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TranslateWidget from "./TranslateWidget";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
   {
@@ -67,17 +68,25 @@ function Button({
   target,
   rel,
 }) {
+  const className = `inline-flex h-12 min-w-36 items-center justify-center gap-3 rounded-none px-7 text-sm font-bold shadow-[0_4px_14px_rgba(13,39,77,.18)] transition ${
+    variant === "gold"
+      ? "rounded-br-3xl bg-[#ffd366] text-[#092346] hover:bg-[#f8be43]"
+      : "bg-[#0d274d] text-[#ffd366] hover:bg-[#082142]"
+  }`;
+
+  const isInternal = typeof href === "string" && href.startsWith("/");
+
+  if (isInternal) {
+    return (
+      <Link className={className} href={href}>
+        <span>←</span>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <a
-      className={`inline-flex h-12 min-w-36 items-center justify-center gap-3 rounded-none px-7 text-sm font-bold shadow-[0_4px_14px_rgba(13,39,77,.18)] transition ${
-        variant === "gold"
-          ? "rounded-br-3xl bg-[#ffd366] text-[#092346] hover:bg-[#f8be43]"
-          : "bg-[#0d274d] text-[#ffd366] hover:bg-[#082142]"
-      }`}
-      href={href}
-      target={target}
-      rel={rel}
-    >
+    <a className={className} href={href} target={target} rel={rel}>
       <span>←</span>
       {children}
     </a>
@@ -91,7 +100,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[13px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-            Deep Clean
+Al Nawras Plus
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -114,7 +123,7 @@ export default function Home() {
             <div className="hidden md:block" />
             <div className="space-y-2 text-center text-sm text-slate-100">
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
-                <span>☎ +96594026150</span>
+                <span>☎ +96595511354</span>
                 <span>✉ awesa7547@gmail</span>
               </div>
               <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-6">
@@ -126,11 +135,25 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center gap-7 text-xl font-black md:justify-end">
-              <span>f</span>
-              <span>◎</span>
-              <span>◔</span>
-            </div>
+           
+
+             <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
+           
+                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                        <FaFacebook />
+                                      </a>
+                                    
+                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <FaInstagram />
+                                      </a>
+                                  
+                                     <a 
+                                                    href="https://wa.me/96595511354"
+                                    
+                                      target="_blank" rel="noopener noreferrer">
+                                      <FaWhatsapp />
+                                    </a>
+                                    </div>
             <div className="flex justify-center md:justify-end">
               <TranslateWidget />
             </div>
@@ -148,37 +171,37 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-1 items-center justify-center gap-8" dir="ltr">
-              <a
-                className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d]"
-                href="#home"
-              >
-                Home
-              </a>
-              <a
-                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="/services"
-              >
-                Services
-              </a>
-              <a
-                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="/contact"
-              >
-                Contact
-              </a>
-              <a
-                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="/about"
-              >
-                About
-              </a>
-            </div>
+<div className="flex flex-1 items-center justify-center gap-8" dir="ltr">
+               <Link
+                 className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d] transition"
+                 href="/"
+               >
+                 Home
+               </Link>
+               <Link
+                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 href="/services"
+               >
+                 Services
+               </Link>
+               <Link
+                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 href="/contact"
+               >
+                 Contact
+               </Link>
+               <Link
+                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 href="/about"
+               >
+                 About
+               </Link>
+             </div>
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
               <Button
                 variant="outline"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -207,7 +230,7 @@ export default function Home() {
               # Kuwait’s Top Cleaning Company
             </p>
             <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              Deep Clean General Cleaning
+Al Nawras Plus General Cleaning
               <br />
               Company for Buildings
             </h1>
@@ -223,7 +246,7 @@ export default function Home() {
               <Button>Book Now</Button>
               <Button
                 variant="outline"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -270,16 +293,16 @@ export default function Home() {
               src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1100&q=80"
             />
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
-              <a
+<Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-              </a>
+</Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -379,22 +402,22 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-8 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
-              <a
+<a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 border-2 border-[#f8be43] bg-white px-7 text-sm font-bold text-[#0d274d] transition hover:bg-slate-50"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span>←</span>
                 Call Now
               </a>
-              <a
+<Link
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-bold text-[#092346] transition hover:bg-[#f8be43]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-              </a>
+</Link>
             </div>
           </div>
           <img
@@ -458,8 +481,8 @@ export default function Home() {
                   Before Services Limited
                 </p>
                 <p className="mt-4 text-sm leading-6 text-slate-200">
-                  Get up to 20% off your first cleaning order with the Deep Clean
-                  team.
+Get up to 20% off your first cleaning order with the Al Nawras Plus
+                   team.
                 </p>
               </div>
               <div className="relative hidden h-full min-h-48 bg-[#f8be43] md:block">
@@ -473,26 +496,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-5 flex justify-center">
-            <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
-              <a
-                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
-                href="/contact"
-              >
-                <span>←</span>
-                Book Now
-              </a>
-              <a
-                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
-                href="https://wa.me/96594026150"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>←</span>
-                Call Now
-              </a>
-            </div>
-          </div>
+<div className="mt-5 flex justify-center">
+             <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
+               <Link
+                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
+                 href="/contact"
+               >
+                 <span>←</span>
+                 Book Now
+               </Link>
+               <a
+                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
+                 href="https://wa.me/96595511354"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <span>←</span>
+                 Call Now
+               </a>
+             </div>
+           </div>
 
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-5 md:grid-cols-4">
             {partners.map((partner) => (
@@ -548,16 +571,16 @@ export default function Home() {
             </ul>
 
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
-              <a
+<Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-              </a>
+</Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -572,7 +595,7 @@ export default function Home() {
               We provide cleaning services across Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-              At Deep Clean, we offer fast and professional cleaning services in
+At Al Nawras Plus, we offer fast and professional cleaning services in
               all areas of Kuwait, with a commitment to the highest standards of
               hygiene and quality every time.
             </p>
@@ -641,16 +664,16 @@ export default function Home() {
             </p>
 
             <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
-              <a
+<Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-              </a>
+              </Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-white px-8 text-lg font-black text-[#0d274d]"
-                href="https://wa.me/96594026150"
+                href="https://wa.me/96595511354"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -668,35 +691,51 @@ export default function Home() {
                 businesses. We bring a touch of pure cleanliness, care, and
                 perfection to every space we serve.
               </p>
-              <div className="mt-8 flex gap-5 text-2xl font-black text-[#ffd366]">
-                <span>f</span>
-                <span>|</span>
-                <span>◎</span>
-                <span>|</span>
-                <span>◔</span>
-              </div>
+               <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                              <FaFacebook />
+                            </a>
+                          
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                              <FaInstagram />
+                            </a>
+                          
+                           <a 
+                                          href="https://wa.me/96595511354"
+                          
+                            target="_blank" rel="noopener noreferrer">
+                            <FaWhatsapp />
+                          </a>
+                          </div>
             </div>
 
             <div className="text-left">
-              <h3 className="text-2xl font-black text-[#ffd366]">Quick links</h3>
-              <ul className="mt-8 space-y-0 text-base font-bold">
-                {[
-                  "Home",
-                  "Services",
-                  "Contact",
-                  "About",
-                ].map((link, index) => (
-                  <li
-                    className={`px-9 py-4 ${
-                      index === 0 ? "border border-white text-[#ffd366]" : "text-white"
-                    }`}
-                    key={link}
-                  >
-                    {link}
-                  </li>
-                ))}
-              </ul>
-            </div>
+  <h3 className="text-2xl font-black text-[#ffd366]">
+    Quick links
+  </h3>
+
+  <ul className="mt-8 space-y-0 text-base font-bold">
+    {[
+      { name: "Home", href: "/" },
+      { name: "Services", href: "/services" },
+      { name: "Contact", href: "/contact" },
+      { name: "About", href: "/about" },
+    ].map((link, index) => (
+      <li
+        key={link.name}
+        className={`px-9 py-4 ${
+          index === 0
+            ? "border border-white text-[#ffd366]"
+            : "text-white"
+        }`}
+      >
+        <Link href={link.href}>
+          {link.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
             <div className="text-left">
               <h3 className="text-2xl font-black text-[#ffd366]">Contact information</h3>

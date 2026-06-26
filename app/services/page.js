@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
   {
@@ -211,7 +212,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[12px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-            Deep Clean
+            Al Nawras Plus
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -245,11 +246,23 @@ function Header() {
               </span>
             </div>
           </div>
-          <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
-            <span>f</span>
-            <span>◎</span>
-            <span>◔</span>
-          </div>
+         <div className="mt-10 flex gap-8 text-4xl font-black text-[#0d274d]">
+               
+           
+                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                        <FaFacebook />
+                                      </a>
+                                   
+                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <FaInstagram />
+                                      </a>
+                                     <a 
+                                                    href="https://wa.me/96595511354"
+                                    
+                                      target="_blank" rel="noopener noreferrer">
+                                      <FaWhatsapp />
+                                    </a>
+                                    </div>
           <div className="flex justify-center md:justify-end">
             <TranslateWidget />
           </div>
@@ -354,37 +367,50 @@ function Footer() {
               businesses. We bring a touch of pure cleanliness, care, and
               perfection to every space we serve.
             </p>
-            <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
-              <span>f</span>
-              <span>|</span>
-              <span>◎</span>
-              <span>|</span>
-              <span>◔</span>
-            </div>
+
+<div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <FaFacebook />
+  </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <FaInstagram />
+  </a>
+   <a 
+                href="https://wa.me/96595511354"
+
+  target="_blank" rel="noopener noreferrer">
+  <FaWhatsapp />
+</a>
+</div>
           </div>
 
-          <div>
-            <h3 className="text-xl font-black text-[#ffd366]">Quick links</h3>
-            <ul className="mt-6 text-sm font-black">
-              {[
-                { label: "Home", href: "/" },
-                { label: "Services", href: "/services" },
-                { label: "Contact us", href: "/contact" },
-                { label: "About the company", href: "/about" },
-              ].map(({ label, href }, index) => (
-                <li
-                  className={`px-7 py-3 ${
-                    index === 1
-                      ? "border border-white text-[#ffd366]"
-                      : "text-white"
-                  }`}
-                  key={label}
-                >
-                  <a href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+         <div className="text-left">
+  <h3 className="text-2xl font-black text-[#ffd366]">
+    Quick links
+  </h3>
+
+  <ul className="mt-8 space-y-0 text-base font-bold">
+    {[
+      { name: "Home", href: "/" },
+      { name: "Services", href: "/services" },
+      { name: "Contact", href: "/contact" },
+      { name: "About", href: "/about" },
+    ].map((link, index) => (
+      <li
+        key={link.name}
+        className={`px-9 py-4 ${
+          index === 0
+            ? "border border-white text-[#ffd366]"
+            : "text-white"
+        }`}
+      >
+        <Link href={link.href}>
+          {link.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           <div>
             <h3 className="text-xl font-black text-[#ffd366]">
