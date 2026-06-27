@@ -280,49 +280,48 @@ function Header() {
             </div>
           </div>
 
-          <div className="flex flex-1 items-center justify-center gap-8">
-            <a
-              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-              href="/"
-            >
-              Home
-            </a>
-            <a
-              className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
-              href="/services"
-            >
-              Services ▾
-            </a>
-            <a
-              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-              href="/contact"
-            >
-              Contact us
-            </a>
-            <a
-              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-              href="/about"
-            >
-              About the company
-            </a>
-          </div>
-
+<div className="flex flex-1 items-center justify-center gap-8">
+             <Link
+               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               href="/"
+             >
+               Home
+             </Link>
+             <Link
+               className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
+               href="/services"
+             >
+               Services ▾
+             </Link>
+             <Link
+               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               href="/contact"
+             >
+               Contact us
+             </Link>
+             <Link
+               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               href="/about"
+             >
+               About the company
+             </Link>
+           </div>
           <div className="hidden items-center gap-4 lg:flex">
-            <a
-              className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
-              href="https://wa.me/96599552956"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Call now <span>→</span>
-            </a>
-            <a
-              className="inline-flex h-11 min-w-32 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
-              href="/contact"
-            >
-              Book now <span>→</span>
-            </a>
-          </div>
+             <a
+               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
+               href="https://wa.me/96599552956"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               Call now <span>→</span>
+             </a>
+             <Link
+               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
+               href="/contact"
+             >
+               Book now <span>→</span>
+             </Link>
+           </div>
         </div>
       </nav>
     </header>
@@ -341,22 +340,22 @@ function Footer() {
           <p className="mt-6 text-3xl font-black leading-tight text-[#ffd366]">
             Your space is about to shine like never before.
           </p>
-          <div className="mt-8 inline-flex overflow-hidden rounded-br-[28px] rounded-tl-[28px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
-            <a
-              className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-white px-7 text-sm font-black text-[#0d274d]"
-              href="https://wa.me/96599552956"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Call now <span>→</span>
-            </a>
-            <a
-              className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-black text-[#092346]"
-              href="/contact"
-            >
-              Book now <span>→</span>
-            </a>
-          </div>
+<div className="mt-8 inline-flex overflow-hidden rounded-br-[28px] rounded-tl-[28px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
+             <a
+               className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-white px-7 text-sm font-black text-[#0d274d]"
+               href="https://wa.me/96599552956"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               Call now <span>→</span>
+             </a>
+             <Link
+               className="inline-flex h-12 min-w-32 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-black text-[#092346]"
+               href="/contact"
+             >
+               Book now <span>→</span>
+             </Link>
+           </div>
         </div>
 
         <div className="mt-28 grid gap-12 md:grid-cols-[1.1fr_.9fr_1fr_1.2fr]">
