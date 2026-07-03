@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const services = [
   {
     id: "house-cleaning",
-    title: "House cleaning",
+    title: "House Cleaning",
     description:
       "Get a clean and refreshed home with our professional cleaning services. We take care of every detail, from dusting to deep sanitizing, to provide a healthy and comfortable environment for you and your family.",
     priceNote:
@@ -29,7 +29,7 @@ const services = [
   },
   {
     id: "apartment-cleaning",
-    title: "Apartment cleaning",
+    title: "Apartment Cleaning",
     description:
       "Professional apartment cleaning tailored to your layout and needs. From studio to multi-bedroom units, we ensure every room is spotless and fresh.",
     priceNote:
@@ -50,8 +50,8 @@ const services = [
     packageNote: "Packages available for weekly and monthly cleaning",
   },
   {
-    id: "full-floor-cleaning",
-    title: "Cleaning an entire floor",
+    id: "floor-cleaning",
+    title: "Floor Cleaning",
     description:
       "Ideal after construction, renovation, or moving. We provide a comprehensive floor-wide deep clean to leave the space ready for use.",
     priceNote:
@@ -67,13 +67,13 @@ const services = [
     howWeWork:
       "Contact us with the floor area details. Our specialized post-construction team will schedule and complete the job efficiently.",
     specialOffer: "Priority scheduling for large floor areas",
-    priceName: "Full Floor Cleaning",
+    priceName: "Floor Cleaning",
     priceRange: "200KD–700KD",
     packageNote: "Discounts available for multi-floor bookings",
   },
   {
     id: "sofa-cleaning",
-    title: "Sofa cleaning",
+    title: "Sofa Cleaning",
     description:
       "Restore your sofa to its original freshness. We remove deep-set stains, allergens, and odors using professional equipment and safe cleaning agents.",
     priceNote:
@@ -94,8 +94,30 @@ const services = [
     packageNote: "Bundle deals available for multiple furniture pieces",
   },
   {
+    id: "office-cleaning",
+    title: "Office Cleaning",
+    description:
+      "Keep your workplace clean, organized, and healthy with professional office cleaning for desks, meeting rooms, reception areas, and shared spaces.",
+    priceNote:
+      "Prices depend on the office size, cleaning frequency, and number of work areas.",
+    offers: [
+      "Desk, table, and surface sanitizing",
+      "Floor sweeping, vacuuming, and mopping",
+      "Reception and meeting room cleaning",
+      "Pantry and washroom cleaning",
+      "Trash collection and liner replacement",
+      "High-touch point disinfection",
+    ],
+    howWeWork:
+      "Share your office size and preferred schedule. Our team can clean before, during, or after business hours with minimal disruption.",
+    specialOffer: "Flexible daily, weekly, and monthly office plans",
+    priceName: "Office Cleaning",
+    priceRange: "100KD-450KD",
+    packageNote: "Custom contracts available for companies and facilities",
+  },
+  {
     id: "carpet-cleaning",
-    title: "Carpet cleaning",
+    title: "Carpet Cleaning",
     description:
       "Deep carpet cleaning that removes embedded dirt, bacteria, and allergens. Your carpets will look and smell brand new after our service.",
     priceNote:
@@ -116,8 +138,30 @@ const services = [
     packageNote: "Discounts for multiple carpets in one visit",
   },
   {
+    id: "window-cleaning",
+    title: "Window Cleaning",
+    description:
+      "Brighten your property with crystal-clear window cleaning for homes, apartments, offices, and storefronts.",
+    priceNote:
+      "Prices depend on the number of windows, height, and access requirements.",
+    offers: [
+      "Interior and exterior glass cleaning",
+      "Window frame and sill wiping",
+      "Spot and water mark removal",
+      "Balcony and sliding door glass cleaning",
+      "Safe tools for high or difficult windows",
+      "Final streak-free polish",
+    ],
+    howWeWork:
+      "Send us the window count or photos. We prepare the right tools and complete the cleaning safely with a final shine check.",
+    specialOffer: "Balcony glass cleaning available on request",
+    priceName: "Window Cleaning",
+    priceRange: "25KD-150KD",
+    packageNote: "Discounts available for full-home or office window cleaning",
+  },
+  {
     id: "kitchen-cleaning",
-    title: "Kitchen cleaning",
+    title: "Kitchen Cleaning",
     description:
       "A thorough deep-clean of your entire kitchen — degreasing, sanitizing, and restoring every surface to a hygienic and sparkling condition.",
     priceNote:
@@ -139,7 +183,7 @@ const services = [
   },
   {
     id: "bathroom-cleaning",
-    title: "Bathroom cleaning",
+    title: "Bathroom Cleaning",
     description:
       "Complete bathroom sanitation — tiles, fixtures, grout, and all surfaces are cleaned and disinfected for a hygienic and fresh result.",
     priceNote:
@@ -160,8 +204,74 @@ const services = [
     packageNote: "Bundle with kitchen cleaning for a discounted rate",
   },
   {
+    id: "deep-cleaning",
+    title: "Deep Cleaning",
+    description:
+      "A complete top-to-bottom cleaning service for homes, apartments, villas, and offices that need detailed attention beyond regular cleaning.",
+    priceNote:
+      "Prices depend on the property size, number of rooms, and condition of the space.",
+    offers: [
+      "Detailed dusting and surface cleaning",
+      "Kitchen and bathroom deep sanitation",
+      "Floor scrubbing and stain removal",
+      "Furniture, doors, and fixture wiping",
+      "Hard-to-reach corner cleaning",
+      "Final inspection before completion",
+    ],
+    howWeWork:
+      "Book your deep cleaning slot and share property details. Our team arrives with all supplies and completes each area step by step.",
+    specialOffer: "Same day deep cleaning available within Kuwait",
+    priceName: "Deep Cleaning",
+    priceRange: "120KD-600KD",
+    packageNote: "Ideal for seasonal cleaning and full property refreshes",
+  },
+  {
+    id: "move-in-move-out-cleaning",
+    title: "Move In / Move Out Cleaning",
+    description:
+      "Prepare your property before moving in or hand it over spotless when moving out with a detailed cleaning of every room and surface.",
+    priceNote:
+      "Prices depend on the property size, furniture status, and level of cleaning required.",
+    offers: [
+      "Empty property deep cleaning",
+      "Cabinet and closet interior cleaning",
+      "Kitchen and bathroom sanitation",
+      "Floor, wall, and door wiping",
+      "Window and balcony cleaning",
+      "Trash and leftover dust removal",
+    ],
+    howWeWork:
+      "Tell us your moving date and property details. We schedule the team to finish the clean before your handover or move-in time.",
+    specialOffer: "Fast scheduling for urgent move-in and move-out jobs",
+    priceName: "Move In / Move Out Cleaning",
+    priceRange: "150KD-650KD",
+    packageNote: "Best for tenants, landlords, and property managers",
+  },
+  {
+    id: "janitorial-service",
+    title: "Janitorial Service",
+    description:
+      "Reliable janitorial service for offices, buildings, showrooms, clinics, and facilities that need regular cleaning support.",
+    priceNote:
+      "Prices depend on the facility size, service frequency, and required staff hours.",
+    offers: [
+      "Daily or scheduled facility cleaning",
+      "Washroom cleaning and restocking",
+      "Trash collection and disposal",
+      "Lobby, hallway, and common area cleaning",
+      "Desk and surface sanitizing",
+      "Custom cleaning checklist management",
+    ],
+    howWeWork:
+      "We review your facility needs, prepare a cleaning schedule, and assign trained staff for consistent service quality.",
+    specialOffer: "Monthly janitorial contracts available",
+    priceName: "Janitorial Service",
+    priceRange: "250KD-1200KD",
+    packageNote: "Custom plans available for commercial properties",
+  },
+  {
     id: "chandelier-cleaning",
-    title: "Cleaning the chandelier",
+    title: "Chandelier Cleaning",
     description:
       "We carefully clean chandeliers of all sizes, restoring their original sparkle and elegance without risk of damage to the delicate crystals or fixtures.",
     priceNote:
@@ -183,7 +293,7 @@ const services = [
   },
   {
     id: "mattress-cleaning",
-    title: "Mattress cleaning",
+    title: "Mattress Cleaning",
     description:
       "Sanitize and refresh your mattress with our deep-cleaning service. We eliminate dust mites, allergens, stains, and odors for a healthier sleep environment.",
     priceNote:
@@ -202,6 +312,168 @@ const services = [
     priceName: "Mattress Cleaning",
     priceRange: "25KD–80KD",
     packageNote: "Bundle with bedroom cleaning for a discounted rate",
+  },
+];
+
+const seoServices = [
+  {
+    title: "House Cleaning Kuwait",
+    body:
+      "Our house cleaning in Kuwait is designed for families who want a clean, healthy, and comfortable home without stress. Al Nawras Plus provides home cleaning services Kuwait residents can rely on for regular upkeep, residential cleaning Kuwait packages, professional house cleaners Kuwait teams, and deep house cleaning Kuwait for kitchens, bedrooms, living rooms, floors, bathrooms, and hard-to-reach areas.",
+    keywords: [
+      "House Cleaning",
+      "House Cleaning Kuwait",
+      "Home Cleaning Services Kuwait",
+      "Residential Cleaning Kuwait",
+      "Professional House Cleaners Kuwait",
+      "Best House Cleaning Company Kuwait",
+      "Deep House Cleaning Kuwait",
+    ],
+  },
+  {
+    title: "Sofa Cleaning Kuwait",
+    body:
+      "We provide sofa cleaning Kuwait customers can book for fabric sofas, couches, majlis seating, and upholstered furniture. Our couch cleaning services Kuwait process includes dust removal, sofa shampoo cleaning Kuwait, stain treatment, deodorizing, and upholstery cleaning Kuwait methods suitable for delicate materials, making us a strong choice for professional sofa cleaners Kuwait.",
+    keywords: [
+      "Sofa Cleaning",
+      "Sofa Cleaning Kuwait",
+      "Couch Cleaning Services Kuwait",
+      "Upholstery Cleaning Kuwait",
+      "Sofa Shampoo Cleaning Kuwait",
+      "Fabric Sofa Cleaning Kuwait",
+      "Professional Sofa Cleaners Kuwait",
+    ],
+  },
+  {
+    title: "Office Cleaning Kuwait",
+    body:
+      "For companies, shops, and workspaces, our office cleaning Kuwait service keeps business areas neat, hygienic, and ready for staff and clients. We support commercial cleaning services Kuwait, office deep cleaning Kuwait, corporate cleaning company Kuwait needs, business cleaning services Kuwait, and office maintenance Kuwait schedules with trained teams and clear checklists.",
+    keywords: [
+      "Office Cleaning",
+      "Office Cleaning Kuwait",
+      "Commercial Cleaning Services Kuwait",
+      "Office Deep Cleaning Kuwait",
+      "Corporate Cleaning Company Kuwait",
+      "Business Cleaning Services Kuwait",
+      "Office Maintenance Kuwait",
+    ],
+  },
+  {
+    title: "Apartment Cleaning Kuwait",
+    body:
+      "Our apartment cleaning Kuwait service is ideal for studios, flats, and family apartments that need careful room-by-room cleaning. We offer flat cleaning services Kuwait, apartment deep cleaning Kuwait, move out apartment cleaning Kuwait, and professional apartment cleaners Kuwait for tenants, owners, landlords, and property managers.",
+    keywords: [
+      "Apartment Cleaning",
+      "Apartment Cleaning Kuwait",
+      "Flat Cleaning Services Kuwait",
+      "Apartment Deep Cleaning Kuwait",
+      "Move Out Apartment Cleaning Kuwait",
+      "Professional Apartment Cleaners Kuwait",
+    ],
+  },
+  {
+    title: "Carpet Cleaning Kuwait",
+    body:
+      "Al Nawras Plus handles carpet cleaning Kuwait jobs for homes, apartments, villas, offices, and commercial spaces. Our rug cleaning services Kuwait and carpet shampoo cleaning Kuwait options help remove dust, odor, stains, and allergens through carpet deep cleaning Kuwait techniques delivered by professional carpet cleaners Kuwait.",
+    keywords: [
+      "Carpet Cleaning",
+      "Carpet Cleaning Kuwait",
+      "Rug Cleaning Services Kuwait",
+      "Carpet Shampoo Cleaning Kuwait",
+      "Carpet Deep Cleaning Kuwait",
+      "Professional Carpet Cleaners Kuwait",
+    ],
+  },
+  {
+    title: "Window Cleaning Kuwait",
+    body:
+      "Our window cleaning Kuwait service improves the look of homes, offices, shops, and buildings with streak-free glass and frame cleaning. We provide glass cleaning services Kuwait, building window cleaning Kuwait, residential window cleaning Kuwait, and professional glass cleaners Kuwait for clear, polished windows inside and outside.",
+    keywords: [
+      "Window Cleaning",
+      "Window Cleaning Kuwait",
+      "Glass Cleaning Services Kuwait",
+      "Building Window Cleaning Kuwait",
+      "Residential Window Cleaning Kuwait",
+      "Professional Glass Cleaners Kuwait",
+    ],
+  },
+  {
+    title: "Floor Cleaning Kuwait",
+    body:
+      "Our floor cleaning Kuwait service covers tiles, marble, common areas, corridors, homes, apartments, and offices. We offer floor polishing Kuwait, tile floor cleaning Kuwait, marble floor polishing Kuwait, and professional floor cleaning services that remove dirt buildup and restore a cleaner finish.",
+    keywords: [
+      "Floor Cleaning",
+      "Floor Cleaning Kuwait",
+      "Floor Polishing Kuwait",
+      "Tile Floor Cleaning Kuwait",
+      "Marble Floor Polishing Kuwait",
+      "Professional Floor Cleaning Services",
+    ],
+  },
+  {
+    title: "Kitchen Cleaning Kuwait",
+    body:
+      "Kitchen cleaning Kuwait requires detailed grease removal, surface sanitizing, appliance care, and careful floor cleaning. Our kitchen deep cleaning Kuwait and grease removal cleaning Kuwait services are suitable for family kitchens, restaurants, cafes, and commercial kitchen cleaning Kuwait needs, delivered as professional kitchen cleaning services.",
+    keywords: [
+      "Kitchen Cleaning",
+      "Kitchen Cleaning Kuwait",
+      "Kitchen Deep Cleaning Kuwait",
+      "Grease Removal Cleaning Kuwait",
+      "Commercial Kitchen Cleaning Kuwait",
+      "Professional Kitchen Cleaning Services",
+    ],
+  },
+  {
+    title: "Bathroom Cleaning Kuwait",
+    body:
+      "We provide bathroom cleaning Kuwait for homes, apartments, villas, offices, clinics, and facilities. Our toilet cleaning services Kuwait, bathroom deep cleaning Kuwait, bathroom sanitization Kuwait, and washroom cleaning services Kuwait focus on hygiene, limescale removal, grout cleaning, mirrors, fixtures, and fresh-smelling results.",
+    keywords: [
+      "Bathroom Cleaning",
+      "Bathroom Cleaning Kuwait",
+      "Toilet Cleaning Services Kuwait",
+      "Bathroom Deep Cleaning Kuwait",
+      "Bathroom Sanitization Kuwait",
+      "Washroom Cleaning Services Kuwait",
+    ],
+  },
+  {
+    title: "Deep Cleaning Kuwait",
+    body:
+      "Our deep cleaning Kuwait service is built for properties that need more than routine cleaning. We provide professional deep cleaning services, home deep cleaning Kuwait, villa deep cleaning Kuwait, and apartment deep cleaning Kuwait with detailed attention to kitchens, bathrooms, floors, furniture, doors, corners, and high-touch areas.",
+    keywords: [
+      "Deep Cleaning",
+      "Deep Cleaning Kuwait",
+      "Professional Deep Cleaning Services",
+      "Home Deep Cleaning Kuwait",
+      "Villa Deep Cleaning Kuwait",
+      "Apartment Deep Cleaning Kuwait",
+    ],
+  },
+  {
+    title: "Move In Cleaning Kuwait and Move Out Cleaning Kuwait",
+    body:
+      "Moving is easier with our move in / move out cleaning service. We handle move in cleaning Kuwait, move out cleaning Kuwait, end of tenancy cleaning Kuwait, vacant property cleaning Kuwait, and relocation cleaning services Kuwait for tenants, landlords, and property managers who need a property ready before handover.",
+    keywords: [
+      "Move In / Move Out Cleaning",
+      "Move In Cleaning Kuwait",
+      "Move Out Cleaning Kuwait",
+      "End of Tenancy Cleaning Kuwait",
+      "Vacant Property Cleaning Kuwait",
+      "Relocation Cleaning Services Kuwait",
+    ],
+  },
+  {
+    title: "Janitorial Services Kuwait",
+    body:
+      "Our janitorial services Kuwait are suitable for offices, buildings, showrooms, clinics, schools, and facilities that need consistent cleaning staff. We support building maintenance cleaning Kuwait, commercial janitorial services, facility cleaning services Kuwait, and cleaning staff services Kuwait with flexible daily, weekly, and monthly schedules.",
+    keywords: [
+      "Janitorial Service",
+      "Janitorial Services Kuwait",
+      "Building Maintenance Cleaning Kuwait",
+      "Commercial Janitorial Services",
+      "Facility Cleaning Services Kuwait",
+      "Cleaning Staff Services Kuwait",
+    ],
   },
 ];
 
@@ -240,9 +512,7 @@ function Header() {
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-5">
               <span>📍</span>
               <span>
-                Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraij Commercial Complex, Nearby Asfour Canary
-                Restaurant
+                Farwaniya block 1 street 74 building 15
               </span>
             </div>
           </div>
@@ -280,27 +550,27 @@ function Header() {
             </div>
           </div>
 
-<div className="flex flex-1 items-center justify-center gap-8">
+<div className="flex flex-1 flex-wrap items-center justify-center gap-3 md:gap-8">
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/"
              >
                Home
              </Link>
              <Link
-               className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
+               className="inline-flex h-11 min-w-28 items-center justify-center border-2 border-[#0d274d] px-5 text-base font-black text-[#0d274d] md:h-12 md:min-w-32 md:px-7"
                href="/services"
              >
                Services ▾
              </Link>
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/contact"
              >
                Contact us
              </Link>
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/about"
              >
                About the company
@@ -416,9 +686,7 @@ function Footer() {
               Contact information
             </h3>
             <p className="mt-6 text-sm leading-7 text-slate-200">
-              Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-              Shop No. 26, Al Khuraij Commercial Complex, Nearby Asfour Canary
-              Restaurant
+              Farwaniya block 1 street 74 building 15
             </p>
           </div>
 
@@ -507,6 +775,58 @@ function ServiceDetail({ service }) {
   );
 }
 
+function SeoContent() {
+  return (
+    <section className="bg-[#f7fafc] px-5 py-16">
+      <div className="mx-auto max-w-6xl">
+        <div className="max-w-3xl">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#c72424]">
+            Cleaning Services Kuwait
+          </p>
+          <h2 className="mt-3 text-3xl font-black text-[#0d274d]">
+            Professional Cleaning Company in Kuwait
+          </h2>
+          <p className="mt-4 text-sm leading-7 text-slate-600">
+            Al Nawras Plus offers professional cleaning services in Kuwait for
+            homes, apartments, villas, offices, buildings, and commercial
+            facilities. From regular house cleaning to deep cleaning, sofa
+            shampoo, carpet cleaning, floor polishing, window glass cleaning,
+            kitchen grease removal, bathroom sanitization, move in cleaning,
+            move out cleaning, and janitorial service, our team delivers clean,
+            organized, and hygienic spaces with reliable scheduling.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {seoServices.map((service) => (
+            <article
+              className="rounded-sm border border-slate-200 bg-white p-6 shadow-[0_4px_18px_rgba(13,39,77,.06)]"
+              key={service.title}
+            >
+              <h3 className="text-xl font-black text-[#0d274d]">
+                {service.title}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {service.body}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {service.keywords.map((keyword) => (
+                  <span
+                    className="border border-[#ffd366] bg-[#fff9e8] px-3 py-2 text-xs font-bold text-[#0d274d]"
+                    key={keyword}
+                  >
+                    {keyword}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function ServicesPage() {
   const [activeId, setActiveId] = useState(services[0].id);
   const activeService = services.find((s) => s.id === activeId);
@@ -522,11 +842,12 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h1 className="text-3xl font-black text-[#0d274d]">
-              High-quality services
-              <span className="text-[#ffd366]">Quality</span>
+              Professional Cleaning Services in Kuwait
             </h1>
             <p className="mt-2 text-sm font-black text-[#c72424]">
-              Professional cleaning services tailored to your needs
+              House cleaning, sofa cleaning, office cleaning, apartment
+              cleaning, carpet cleaning, window cleaning, floor cleaning, deep
+              cleaning, and janitorial service
             </p>
           </div>
 
@@ -551,6 +872,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <SeoContent />
 
       <Footer />
     </main>

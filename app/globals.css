@@ -7,6 +7,10 @@
   --gold-soft: #fff2cf;
   --ink: #10233f;
   --muted: #687486;
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", "Inter", "Aptos",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", "Aptos Display",
+    "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -23,12 +27,64 @@ body {
   top: 0 !important;
   background: #ffffff;
   color: var(--ink);
-  font-family: "Segoe UI", "Tahoma", "Arial", sans-serif;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+button,
+nav a {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(248, 190, 67, 0.45);
+  color: var(--navy);
 }
 
 button,
 a {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(248, 190, 67, 0.9);
+  outline-offset: 3px;
 }
 
 .ltr {
@@ -56,7 +112,7 @@ a {
   border-radius: 4px;
   background: #ffffff;
   color: #0d274d;
-  font-family: "Tahoma", "Arial", sans-serif;
+  font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 700;
   outline: none;
@@ -102,6 +158,17 @@ body[style] {
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 
+.services-track article,
+.testimonial-track article {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.services-track article:hover,
+.testimonial-track article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(13, 39, 77, 0.14);
+}
+
 .services-track {
   animation: services-slide 26s linear infinite;
 }
@@ -120,6 +187,41 @@ body[style] {
 
 .testimonial-slider:hover .testimonial-track {
   animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .translate-widget {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .translate-select {
+    max-width: 100%;
+  }
+
+  .services-slider,
+  .testimonial-slider {
+    mask-image: none;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 14vw, 3.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 9vw, 3rem);
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    max-width: 100%;
+  }
 }
 
 @keyframes services-slide {

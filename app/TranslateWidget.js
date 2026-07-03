@@ -22,20 +22,10 @@ const [language, setLanguage] = useState("ar");
        });
      }
 
-     const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-     if (match) {
-       const value = match[1];
-       if (value.includes("/ar/en")) {
-         setLanguage("en");
-       } else if (value.includes("/en/ar")) {
-         setLanguage("ar");
-       } else if (value.includes("/en/en")) {
-         setLanguage("en");
-       }
-     } else {
-       setLanguage("ar");
-       setCookie("googtrans", "/en/ar");
-     }
+     const savedLanguage = window.localStorage.getItem("preferredLanguage");
+     const nextLanguage = savedLanguage === "en" ? "en" : "ar";
+     setLanguage(nextLanguage);
+     setCookie("googtrans", nextLanguage === "en" ? "/en/en" : "/en/ar");
 
     if (window.google?.translate?.TranslateElement) {
       return;
@@ -79,6 +69,7 @@ const [language, setLanguage] = useState("ar");
       setCookie("googtrans", "/en/ar");
     }
 
+    window.localStorage.setItem("preferredLanguage", nextLanguage);
     window.location.reload();
   }
 

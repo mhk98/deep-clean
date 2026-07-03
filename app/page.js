@@ -2,38 +2,106 @@ import Link from "next/link";
 import TranslateWidget from "./TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
+// const services = [
+//   {
+//     title: "Sofa Cleaning",
+//     image:
+//       "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80",
+//     text: "Deep and safe cleaning removes dust and stains while preserving upholstery and surfaces.",
+//   },
+//   {
+//     title: "Chandelier Cleaning",
+//     image:
+//       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
+//     text: "Precise chandelier and glass cleaning with full attention to sparkling details.",
+//   },
+//   {
+//     title: "Home Cleaning",
+//     image:
+//       "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80",
+//     text: "Complete home cleaning for kitchens, rooms, and living areas using professional equipment.",
+//   },
+//   {
+//     title: "Window Cleaning",
+//     image:
+//       "https://images.unsplash.com/photo-1596394723269-b2cbca4e6313?auto=format&fit=crop&w=1000&q=80",
+//     text: "Window and frame cleaning with dust and stain removal for a clear shine.",
+//   },
+// ];
+
 const services = [
   {
+    title: "House Cleaning",
+    image: "/services/house-cleaning.jpg",
+    text: "House Cleaning Kuwait for spotless homes, villas, and family living spaces.",
+  },
+  {
     title: "Sofa Cleaning",
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80",
-    text: "Deep and safe cleaning removes dust and stains while preserving upholstery and surfaces.",
+    image: "/services/sofa-cleaning.jpg",
+    text: "Sofa Cleaning Kuwait with shampoo care for stains, dust, and fabric freshness.",
   },
   {
-    title: "Chandelier Cleaning",
-    image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
-    text: "Precise chandelier and glass cleaning with full attention to sparkling details.",
+    title: "Office Cleaning",
+    image: "/services/office-cleaning.jpg",
+    text: "Office Cleaning Kuwait for productive, hygienic, and well-maintained workspaces.",
   },
   {
-    title: "Home Cleaning",
-    image:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80",
-    text: "Complete home cleaning for kitchens, rooms, and living areas using professional equipment.",
+    title: "Apartment Cleaning",
+    image: "/services/apartment-cleaning.jpg",
+    text: "Apartment Cleaning Kuwait for flats, rentals, and move-ready residential spaces.",
+  },
+  {
+    title: "Carpet Cleaning",
+    image: "/services/carpet-cleaning.jpg",
+    text: "Carpet Cleaning Kuwait for fresh rugs, cleaner floors, and stain removal.",
   },
   {
     title: "Window Cleaning",
-    image:
-      "https://images.unsplash.com/photo-1596394723269-b2cbca4e6313?auto=format&fit=crop&w=1000&q=80",
-    text: "Window and frame cleaning with dust and stain removal for a clear shine.",
+    image: "/services/window-cleaning.jpg",
+    text: "Crystal-clear window cleaning services for homes and offices in Kuwait.",
+  },
+  {
+    title: "Floor Cleaning",
+    image: "/services/floor-cleaning.jpg",
+    text: "Expert floor cleaning and polishing services across Kuwait.",
+  },
+  {
+    title: "Kitchen Cleaning",
+    image: "/services/kitchen-cleaning.jpg",
+    text: "Detailed kitchen cleaning in Kuwait with grease and stain removal.",
+  },
+  {
+    title: "Bathroom Cleaning",
+    image: "/services/bathroom-cleaning.jpg",
+    text: "Sanitized bathroom cleaning service for hygienic homes in Kuwait.",
+  },
+  {
+    title: "Deep Cleaning",
+    image: "/services/deep-cleaning.jpg",
+    text: "Deep Cleaning Kuwait for homes, villas, apartments, offices, and buildings.",
+  },
+  {
+    title: "Move In / Move Out Cleaning",
+    image: "/services/move-cleaning.jpg",
+    text: "Specialized move in/move out cleaning service in Kuwait.",
+  },
+  {
+    title: "Janitorial Service",
+    image: "/services/janitorial-cleaning.jpg",
+    text: "Reliable janitorial services for offices, buildings, and facilities.",
+  },
+  {
+    title: "Chandelier Cleaning",
+    image: "/services/chandelier-cleaning.jpg",
+    text: "Careful chandelier and decorative light fixture cleaning in Kuwait.",
   },
 ];
 
 const reasons = [
-  ["Skilled Experts", "A trained team for home and office cleaning with care and attention."],
-  ["Fast & Reliable Service", "We arrive on time and work with clear quality standards."],
-  ["Eco-Friendly Products", "Safe cleaning supplies for daily use inside your home."],
-  ["Available Across Kuwait", "We cover most areas with flexible booking options."],
+  ["Top Rated Cleaning Team", "Our trained cleaners deliver top rated cleaning company Kuwait quality for homes, villas, apartments, and offices."],
+  ["Fast & Reliable Service", "We arrive on time for cleaning services near me searches across Kuwait with clear quality standards."],
+  ["Eco-Friendly Products", "Safe cleaning supplies for daily use inside your home and office."],
+  ["Affordable Kuwait Coverage", "Affordable cleaning services Kuwait customers can book in all governorates with flexible options."],
 ];
 
 const partners = [
@@ -53,12 +121,33 @@ const testimonials = [
 ];
 
 const faqs = [
-  "How can I book a cleaning service?",
-  "Do you provide house cleaning staff?",
-  "How long does home cleaning take?",
-  "Do you offer a service guarantee?",
-  "What payment methods do you accept?",
-  "Which areas do you cover in Kuwait?",
+  "How can I book cleaning services in Kuwait?",
+  "Do you offer cleaning services near me in Kuwait?",
+  "Which areas do you cover for cleaning services in Kuwait?",
+  "Do you provide professional house cleaning staff?",
+  "How long does office cleaning take in Kuwait?",
+  "Do you offer same day cleaning service guarantee?",
+  "What areas do you cover for cleaning services?",
+  "Are your cleaning products safe for homes and offices?",
+];
+
+const localSeoKeywords = [
+  "Cleaning Services Kuwait City",
+  "Cleaning Company Farwaniya",
+  "House Cleaning Hawalli",
+  "Deep Cleaning Salmiya",
+  "Office Cleaning Kuwait City",
+  "Sofa Cleaning Jabriya",
+  "Apartment Cleaning Mahboula",
+  "Carpet Cleaning Fahaheel",
+  "Villa Cleaning Mangaf",
+  "Building Cleaning Ahmadi",
+  "Cleaning Services Jahra",
+  "Cleaning Company Near Me Kuwait",
+  "Same Day Cleaning Service Kuwait",
+  "Cleaning Services Farwaniya",
+  "Cleaning Services Hawalli",
+  "Cleaning Services Salmiya",
 ];
 
 function Button({
@@ -129,9 +218,7 @@ export default function Home() {
               <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-6">
                 <span>📍</span>
                 <span>
-                  Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                  Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour
-                  Canary Restaurant
+Farwaniya block 1 street 74 building 15
                 </span>
               </div>
             </div>
@@ -171,27 +258,27 @@ export default function Home() {
               </div>
             </div>
 
-<div className="flex flex-1 items-center justify-center gap-8" dir="ltr">
+<div className="flex flex-1 flex-wrap items-center justify-center gap-3 md:gap-8" dir="ltr">
                <Link
-                 className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d] transition"
+                 className="inline-flex h-12 min-w-28 items-center justify-center border-2 border-[#0d274d] px-6 text-base font-black text-[#0d274d] transition md:h-14 md:min-w-36 md:px-8 md:text-lg"
                  href="/"
                >
                  Home
                </Link>
                <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
                  href="/services"
                >
                  Services
                </Link>
                <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
                  href="/contact"
                >
                  Contact
                </Link>
                <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
                  href="/about"
                >
                  About
@@ -226,23 +313,24 @@ export default function Home() {
         </div>
         <div className="mx-auto flex min-h-[620px] max-w-6xl items-center justify-center px-5 pb-24 pt-16">
           <div className="max-w-3xl text-center">
-            <p className="mb-7 text-lg font-black text-red-600">
-              # Kuwait’s Top Cleaning Company
+<p className="mb-7 text-lg font-black text-[#1d6a29]">
+              Cleaning Services Kuwait
             </p>
-            <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-Al Nawras Plus General Cleaning
+<h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
+              Al Nawras Plus - Best Cleaning Company Kuwait
               <br />
-              Company for Buildings
+              Professional Cleaning Services Kuwait
             </h1>
             <h2 className="mt-10 text-2xl font-black text-[#102b55] md:text-3xl">
-              High-quality cleaning for homes and businesses
+              House Cleaning Kuwait, Office Cleaning Kuwait & Deep Cleaning Kuwait
             </h2>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#213d63]">
-              Enjoy completely clean spaces with our professional cleaning
-              services. From homes to offices, we provide deep and reliable
-              cleaning you can trust.
+              Al Nawras Plus is a trusted cleaning company Kuwait customers choose for
+              affordable cleaning services Kuwait wide. Our team handles house cleaning,
+              sofa cleaning, apartment cleaning, carpet cleaning, villa cleaning, and
+              building cleaning with eco-friendly products and spotless results.
             </p>
-            <div className="mt-10 flex justify-center gap-4">
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button>Book Now</Button>
               <Button
                 variant="outline"
@@ -292,7 +380,7 @@ Al Nawras Plus General Cleaning
               className="mx-auto h-[350px] w-full max-w-[540px] rounded-2xl object-cover shadow-sm"
               src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1100&q=80"
             />
-            <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
+            <div className="mt-12 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
 <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
@@ -320,8 +408,11 @@ Al Nawras Plus General Cleaning
               Kuwait
             </h2>
             <p className="mt-10 text-lg leading-9 text-[#18365e]">
-              We provide trusted, high-quality cleaning services you can rely on
-              every time.
+              As a top rated cleaning company Kuwait residents and businesses trust, we
+              provide high-quality cleaning services you can rely on every time. Our
+              professional cleaning team specializes in residential cleaning, commercial
+              cleaning, villa cleaning Kuwait, and building cleaning Kuwait with
+              eco-friendly solutions.
             </p>
             <div className="mt-9 grid overflow-hidden rounded-bl-[28px] rounded-tr-[28px] border border-[#f1dc97] bg-white text-center shadow-sm md:max-w-xl md:grid-cols-3">
               {[
@@ -348,11 +439,11 @@ Al Nawras Plus General Cleaning
 
       <section id="services" className="bg-[#fff4d8] px-5 py-24 md:py-28">
         <div className="mx-auto max-w-6xl text-center">
-          <p className="section-title-line text-sm font-bold text-[#f0a600]">
-            Premium Services
+<p className="section-title-line text-sm font-bold text-[#f0a600]">
+            Professional Cleaning Services Kuwait
           </p>
           <h2 className="mt-4 text-3xl font-black text-[#0d274d]">
-            We love delivering standout cleaning
+            House Cleaning Kuwait, Sofa Cleaning Kuwait, Office Cleaning Kuwait & More
           </h2>
 
           <div className="services-slider ltr mx-auto mt-16 max-w-5xl overflow-hidden">
@@ -381,7 +472,12 @@ Al Nawras Plus General Cleaning
           </div>
 
           <div className="mt-16">
-            <Button>All Services</Button>
+<Link
+              className="inline-flex h-12 min-w-36 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-7 text-sm font-bold text-[#092346] shadow-[0_4px_14px_rgba(13,39,77,.18)] transition hover:bg-[#f8be43]"
+              href="/services"
+            >
+          <span> All Services</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -401,7 +497,7 @@ Al Nawras Plus General Cleaning
                 </div>
               ))}
             </div>
-            <div className="mt-8 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
+            <div className="mt-8 inline-flex max-w-full flex-wrap overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
 <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 border-2 border-[#f8be43] bg-white px-7 text-sm font-bold text-[#0d274d] transition hover:bg-slate-50"
                 href="https://wa.me/96595511354"
@@ -497,7 +593,7 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
           </div>
 
 <div className="mt-5 flex justify-center">
-             <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
+             <div className="inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
                <Link
                  className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
                  href="/contact"
@@ -536,7 +632,7 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Government <span className="font-black text-[#0d274d]">We Cover</span>
+                Areas <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
                 <div className="h-full w-24 bg-[#0d274d]" />
@@ -544,12 +640,15 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </div>
 
             <h3 className="mt-16 text-2xl font-black text-[#c72424]">
-              We cover all governorates of Kuwait
+              Local Cleaning Services Across Kuwait
             </h3>
             <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-[#4c5d76] md:mx-0">
               We deliver professional cleaning services in all governorates of Kuwait.
-              Wherever you are, our team is ready to serve you quickly, efficiently,
-              and with the highest quality.
+              If you are searching for cleaning services near me, our team is ready
+              to reach your home, apartment, villa, office, or building quickly,
+              efficiently, and with the highest quality. We serve Kuwait City,
+              Farwaniya, Hawalli, Salmiya, Jabriya, Mahboula, Fahaheel, Mangaf,
+              Ahmadi, Jahra, and nearby residential and commercial areas.
             </p>
 
             <ul className="mx-auto mt-10 max-w-xl text-base font-black leading-8 text-[#243955] md:mx-0">
@@ -570,7 +669,18 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               ))}
             </ul>
 
-            <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
+            <div className="mx-auto mt-10 flex max-w-xl flex-wrap justify-center gap-2 md:mx-0 md:justify-start">
+              {localSeoKeywords.map((keyword) => (
+                <span
+                  className="border border-[#d8cdb3] bg-white px-3 py-2 text-xs font-black text-[#0d274d]"
+                  key={keyword}
+                >
+                  {keyword}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-12 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
 <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
@@ -590,41 +700,46 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </div>
           </div>
 
-          <article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-left shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
+<article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-left shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
             <h2 className="text-3xl font-black leading-tight text-[#9b1b1f]">
-              We provide cleaning services across Kuwait
+              Top Rated Cleaning Company Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-At Al Nawras Plus, we offer fast and professional cleaning services in
-              all areas of Kuwait, with a commitment to the highest standards of
-              hygiene and quality every time.
+              As Kuwait's best cleaning company, Al Nawras Plus offers fast and reliable
+              cleaning services Kuwait customers can book at affordable prices. Our
+              trusted cleaning experts provide house cleaning Kuwait, deep cleaning Kuwait,
+              office cleaning Kuwait, sofa cleaning Kuwait, apartment cleaning Kuwait,
+              carpet cleaning Kuwait, villa cleaning Kuwait, and building cleaning Kuwait
+              with eco-friendly products.
             </p>
 
             <h3 className="mt-8 text-2xl font-black text-[#1d6a29]">
-              Serving Popular Areas
+              Serving Popular Areas in Kuwait
             </h3>
             <p className="mt-8 text-base font-bold leading-8 text-[#6d6d6d]">
-              Abdullah Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha,
-              Jaber Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya,
-              Qurtuba, Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya,
-              Abdullah Al-Mubarak, Sabah Al-Nasser, Firdous, Rumaithiya, Salmiya,
-              Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
+              We provide cleaning services Kuwait City customers can book quickly,
+              plus cleaning company Farwaniya coverage, house cleaning Hawalli,
+              deep cleaning Salmiya, sofa cleaning Jabriya, apartment cleaning
+              Mahboula, carpet cleaning Fahaheel, villa cleaning Mangaf, building
+              cleaning Ahmadi, and cleaning services Jahra. We also cover Abdullah
+              Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha, Jaber
+              Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya, Qurtuba,
+              Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya, Sabah Al-Nasser,
+              Rumaithiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, and
+              nearby areas.
             </p>
 
-            <div className="mt-8 border-t border-[#d8d2c8] pt-8">
+<div className="mt-8 border-t border-[#d8d2c8] pt-8">
               {[
                 [
-                  "Fast Response Across Kuwait",
-                  "We reach your location quickly and start cleaning without delay.",
-                ],
+                  "Same Day Cleaning Service Available",
+                  "Same day cleaning service Kuwait customers can book for urgent home, office, apartment, and villa cleaning needs."],
                 [
                   "Residential & Commercial Coverage",
-                  "From homes and apartments to offices, we handle everything professionally.",
-                ],
+                  "From homes, villas, and apartments to offices and buildings in Kuwait City, Farwaniya, Hawalli, Salmiya, Ahmadi, and Jahra, we handle everything professionally."],
                 [
                   "Detailed & Hygienic Cleaning",
-                  "Every corner is cleaned with care to ensure a fresh and healthy environment.",
-                ],
+                  "Every corner is cleaned with care using eco-friendly products for healthy spaces."],
               ].map((group) => (
                 <div className="mt-8 first:mt-0" key={group[0]}>
                   <h4 className="text-lg font-black text-[#b14f24]">✓ {group[0]}</h4>
@@ -663,7 +778,7 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
               Your space is about to shine like never before.
             </p>
 
-            <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
+            <div className="mt-10 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
 <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
@@ -686,10 +801,11 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
           <div className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]" dir="ltr">
             <div className="text-left">
               <LogoBadge />
-              <p className="mt-8 max-w-sm text-base leading-8 text-white">
-                We offer reliable, high-quality cleaning services for homes and
-                businesses. We bring a touch of pure cleanliness, care, and
-                perfection to every space we serve.
+<p className="mt-8 max-w-sm text-base leading-8 text-white">
+                Al Nawras Plus is a cleaning company Kuwait customers trust for
+                professional cleaning services, house cleaning, office cleaning,
+                sofa cleaning, apartment cleaning, carpet cleaning, and deep cleaning
+                across Kuwait with affordable prices.
               </p>
                <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -740,9 +856,7 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
             <div className="text-left">
               <h3 className="text-2xl font-black text-[#ffd366]">Contact information</h3>
               <p className="mt-8 text-base leading-8 text-white ltr">
-                Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-                Restaurant
+                Farwaniya block 1 street 74 building 15
               </p>
             </div>
 

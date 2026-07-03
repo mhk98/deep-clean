@@ -2,6 +2,12 @@ import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
+export const metadata = {
+  title: "About Al Nawras Plus | Top Rated Cleaning Company in Kuwait",
+  description:
+    "Learn about Al Nawras Plus, a trusted cleaning company in Kuwait providing professional house cleaning, apartment cleaning, office cleaning, sofa cleaning, carpet cleaning, deep cleaning, and commercial cleaning services.",
+};
+
 const qualityServices = [
   [
     "⌂",
@@ -85,9 +91,7 @@ function Header() {
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-5">
               <span>📍</span>
               <span>
-                Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-                Restaurant
+                Farwaniya block 1 street 74 building 15
               </span>
             </div>
           </div>
@@ -144,27 +148,27 @@ function Header() {
               <LogoBadge />
             </div>
           </div>
-<div className="flex flex-1 items-center justify-center gap-8">
+<div className="flex flex-1 flex-wrap items-center justify-center gap-3 md:gap-8">
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/"
              >
                Main
              </Link>
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/services"
              >
                Services
              </Link>
              <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+               className="inline-flex text-base font-black text-[#0d274d]"
                href="/contact"
              >
                Contact us
              </Link>
              <Link
-               className="inline-flex h-12 min-w-44 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
+               className="inline-flex h-11 min-w-36 items-center justify-center border-2 border-[#0d274d] px-5 text-base font-black text-[#0d274d] md:h-12 md:min-w-44 md:px-7"
                href="/about"
              >
                About the company
@@ -277,9 +281,7 @@ function Footer() {
               Contact information
             </h3>
             <p className="mt-6 text-sm leading-7 text-slate-200">
-              Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-              Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-              Restaurant
+              Farwaniya block 1 street 74 building 15
             </p>
           </div>
           <div>
