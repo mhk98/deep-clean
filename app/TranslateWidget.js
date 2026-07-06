@@ -8,34 +8,29 @@ function setCookie(name, value) {
 }
 
 export default function TranslateWidget() {
-const [language, setLanguage] = useState("ar");
+  const [language, setLanguage] = useState(() => {
+    if (typeof window === "undefined") {
+      return "ar";
+    }
 
-   useEffect(() => {
-     function removeTranslateGap() {
-       document.body.style.top = "0px";
-       document.documentElement.style.marginTop = "0px";
+    return window.localStorage.getItem("preferredLanguage") === "en"
+      ? "en"
+      : "ar";
+  });
 
-       document.querySelectorAll("body > .skiptranslate").forEach((element) => {
-         element.style.display = "none";
-         element.style.height = "0";
-         element.style.visibility = "hidden";
-       });
-     }
+  useEffect(() => {
+    function removeTranslateGap() {
+      document.body.style.top = "0px";
+      document.documentElement.style.marginTop = "0px";
 
-     const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-     if (match) {
-       const value = match[1];
-       if (value.includes("/ar/en")) {
-         setLanguage("en");
-       } else if (value.includes("/en/ar")) {
-         setLanguage("ar");
-       } else if (value.includes("/en/en")) {
-         setLanguage("en");
-       }
-     } else {
-       setLanguage("ar");
-       setCookie("googtrans", "/en/ar");
-     }
+      document.querySelectorAll("body > .skiptranslate").forEach((element) => {
+        element.style.display = "none";
+        element.style.height = "0";
+        element.style.visibility = "hidden";
+      });
+    }
+
+    setCookie("googtrans", language === "en" ? "/en/en" : "/en/ar");
 
     if (window.google?.translate?.TranslateElement) {
       return;
@@ -67,7 +62,7 @@ const [language, setLanguage] = useState("ar");
     return () => {
       window.clearInterval(gapTimer);
     };
-  }, []);
+  }, [language]);
 
   function handleLanguageChange(event) {
     const nextLanguage = event.target.value;
@@ -79,6 +74,7 @@ const [language, setLanguage] = useState("ar");
       setCookie("googtrans", "/en/ar");
     }
 
+    window.localStorage.setItem("preferredLanguage", nextLanguage);
     window.location.reload();
   }
 

@@ -30,10 +30,22 @@ const services = [
 ];
 
 const reasons = [
-  ["Skilled Experts", "A trained team for home and office cleaning with care and attention."],
-  ["Fast & Reliable Service", "We arrive on time and work with clear quality standards."],
-  ["Eco-Friendly Products", "Safe cleaning supplies for daily use inside your home."],
-  ["Available Across Kuwait", "We cover most areas with flexible booking options."],
+  [
+    "Skilled Experts",
+    "A trained team for home and office cleaning with care and attention.",
+  ],
+  [
+    "Fast & Reliable Service",
+    "We arrive on time and work with clear quality standards.",
+  ],
+  [
+    "Eco-Friendly Products",
+    "Safe cleaning supplies for daily use inside your home.",
+  ],
+  [
+    "Available Across Kuwait",
+    "We cover most areas with flexible booking options.",
+  ],
 ];
 
 const partners = [
@@ -100,7 +112,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[13px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-Al Nawras Plus
+            Al Nawras Plus
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -124,36 +136,39 @@ export default function Home() {
             <div className="space-y-2 text-center text-sm text-slate-100">
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
                 <span>☎ +96595511354</span>
-                <span>✉ awesa7547@gmail</span>
+                <span>✉ alnawraspluskuwait@gmail.com</span>
               </div>
               <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-6">
                 <span>📍</span>
-                <span>
-                  Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                  Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour
-                  Canary Restaurant
-                </span>
+                <span>Farwaniya block 1 street 74 building 15</span>
               </div>
             </div>
-           
 
-             <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
-           
-                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook />
-                                      </a>
-                                    
-                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram />
-                                      </a>
-                                  
-                                     <a 
-                                                    href="https://wa.me/96595511354"
-                                    
-                                      target="_blank" rel="noopener noreferrer">
-                                      <FaWhatsapp />
-                                    </a>
-                                    </div>
+            <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
+              <a
+                href="https://www.facebook.com/alnawrasplus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+
+              <a
+                href="https://www.instagram.com/alnawraspluskuwait"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
             <div className="flex justify-center md:justify-end">
               <TranslateWidget />
             </div>
@@ -171,32 +186,35 @@ export default function Home() {
               </div>
             </div>
 
-<div className="flex flex-1 items-center justify-center gap-8" dir="ltr">
-               <Link
-                 className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d] transition"
-                 href="/"
-               >
-                 Home
-               </Link>
-               <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                 href="/services"
-               >
-                 Services
-               </Link>
-               <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                 href="/contact"
-               >
-                 Contact
-               </Link>
-               <Link
-                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                 href="/about"
-               >
-                 About
-               </Link>
-             </div>
+            <div
+              className="flex flex-1 items-center justify-center gap-8"
+              dir="ltr"
+            >
+              <Link
+                className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d] transition"
+                href="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/services"
+              >
+                Services
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/contact"
+              >
+                Contact
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/about"
+              >
+                About
+              </Link>
+            </div>
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
               <Button
@@ -230,7 +248,7 @@ export default function Home() {
               # Kuwait’s Top Cleaning Company
             </p>
             <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-Al Nawras Plus General Cleaning
+              Al Nawras Plus General Cleaning
               <br />
               Company for Buildings
             </h1>
@@ -293,13 +311,13 @@ Al Nawras Plus General Cleaning
               src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1100&q=80"
             />
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
-<Link
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
                 href="https://wa.me/96595511354"
@@ -397,12 +415,14 @@ Al Nawras Plus General Cleaning
                 <div key={title}>
                   <div className="mb-3 text-2xl text-[#f8be43]">✦</div>
                   <h3 className="font-bold text-[#f8be43]">{title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-200">{text}</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
             <div className="mt-8 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
-<a
+              <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 border-2 border-[#f8be43] bg-white px-7 text-sm font-bold text-[#0d274d] transition hover:bg-slate-50"
                 href="https://wa.me/96595511354"
                 target="_blank"
@@ -411,13 +431,13 @@ Al Nawras Plus General Cleaning
                 <span>←</span>
                 Call Now
               </a>
-<Link
+              <Link
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-bold text-[#092346] transition hover:bg-[#f8be43]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
             </div>
           </div>
           <img
@@ -453,10 +473,12 @@ Al Nawras Plus General Cleaning
                   dir="ltr"
                   key={name + index}
                 >
-                  <div className="text-xl tracking-[4px] text-[#f8be43]">★★★★★</div>
+                  <div className="text-xl tracking-[4px] text-[#f8be43]">
+                    ★★★★★
+                  </div>
                   <p className="mt-6 text-sm leading-7 text-[#687486]">
-                    Excellent service and a professional team. They cleaned carefully
-                    and on time, and the result was amazing.
+                    Excellent service and a professional team. They cleaned
+                    carefully and on time, and the result was amazing.
                   </p>
                   <strong className="mt-7 block text-sm text-black">
                     — {name}
@@ -481,8 +503,8 @@ Al Nawras Plus General Cleaning
                   Before Services Limited
                 </p>
                 <p className="mt-4 text-sm leading-6 text-slate-200">
-Get up to 20% off your first cleaning order with the Al Nawras Plus
-                   team.
+                  Get up to 20% off your first cleaning order with the Al Nawras
+                  Plus team.
                 </p>
               </div>
               <div className="relative hidden h-full min-h-48 bg-[#f8be43] md:block">
@@ -496,26 +518,26 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </div>
           </div>
 
-<div className="mt-5 flex justify-center">
-             <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
-               <Link
-                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
-                 href="/contact"
-               >
-                 <span>←</span>
-                 Book Now
-               </Link>
-               <a
-                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
-                 href="https://wa.me/96595511354"
-                 target="_blank"
-                 rel="noopener noreferrer"
-               >
-                 <span>←</span>
-                 Call Now
-               </a>
-             </div>
-           </div>
+          <div className="mt-5 flex justify-center">
+            <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
+              <Link
+                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
+                href="/contact"
+              >
+                <span>←</span>
+                Book Now
+              </Link>
+              <a
+                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>←</span>
+                Call Now
+              </a>
+            </div>
+          </div>
 
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-5 md:grid-cols-4">
             {partners.map((partner) => (
@@ -523,7 +545,9 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
                 className="flex h-32 items-center justify-center gap-5 border-[6px] border-[#f0f1f3] bg-white text-xl font-black text-[#8f949b]"
                 key={partner.name}
               >
-                <span className="p-3 text-2xl text-[#70757c]">{partner.mark}</span>
+                <span className="p-3 text-2xl text-[#70757c]">
+                  {partner.mark}
+                </span>
                 <span>{partner.name}</span>
               </div>
             ))}
@@ -536,7 +560,8 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Government <span className="font-black text-[#0d274d]">We Cover</span>
+                Government{" "}
+                <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
                 <div className="h-full w-24 bg-[#0d274d]" />
@@ -547,9 +572,9 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               We cover all governorates of Kuwait
             </h3>
             <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-[#4c5d76] md:mx-0">
-              We deliver professional cleaning services in all governorates of Kuwait.
-              Wherever you are, our team is ready to serve you quickly, efficiently,
-              and with the highest quality.
+              We deliver professional cleaning services in all governorates of
+              Kuwait. Wherever you are, our team is ready to serve you quickly,
+              efficiently, and with the highest quality.
             </p>
 
             <ul className="mx-auto mt-10 max-w-xl text-base font-black leading-8 text-[#243955] md:mx-0">
@@ -571,13 +596,13 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </ul>
 
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
-<Link
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
                 href="https://wa.me/96595511354"
@@ -595,9 +620,9 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               We provide cleaning services across Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-At Al Nawras Plus, we offer fast and professional cleaning services in
-              all areas of Kuwait, with a commitment to the highest standards of
-              hygiene and quality every time.
+              At Al Nawras Plus, we offer fast and professional cleaning
+              services in all areas of Kuwait, with a commitment to the highest
+              standards of hygiene and quality every time.
             </p>
 
             <h3 className="mt-8 text-2xl font-black text-[#1d6a29]">
@@ -607,8 +632,8 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
               Abdullah Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha,
               Jaber Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya,
               Qurtuba, Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya,
-              Abdullah Al-Mubarak, Sabah Al-Nasser, Firdous, Rumaithiya, Salmiya,
-              Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
+              Abdullah Al-Mubarak, Sabah Al-Nasser, Firdous, Rumaithiya,
+              Salmiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
             </p>
 
             <div className="mt-8 border-t border-[#d8d2c8] pt-8">
@@ -627,8 +652,12 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
                 ],
               ].map((group) => (
                 <div className="mt-8 first:mt-0" key={group[0]}>
-                  <h4 className="text-lg font-black text-[#b14f24]">✓ {group[0]}</h4>
-                  <p className="mt-2 text-base leading-8 text-[#5e7189]">{group[1]}</p>
+                  <h4 className="text-lg font-black text-[#b14f24]">
+                    ✓ {group[0]}
+                  </h4>
+                  <p className="mt-2 text-base leading-8 text-[#5e7189]">
+                    {group[1]}
+                  </p>
                 </div>
               ))}
             </div>
@@ -638,7 +667,9 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
 
       <section id="faq" className="px-5 py-24">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-5xl font-black text-emerald-800">📌 FAQ</h2>
+          <h2 className="text-center text-5xl font-black text-emerald-800">
+            📌 FAQ
+          </h2>
           <div className="mt-14 grid gap-x-24 md:grid-cols-2">
             {faqs.map((faq) => (
               <button
@@ -664,7 +695,7 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
             </p>
 
             <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
-<Link
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
@@ -683,7 +714,10 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
             </div>
           </div>
 
-          <div className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]" dir="ltr">
+          <div
+            className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]"
+            dir="ltr"
+          >
             <div className="text-left">
               <LogoBadge />
               <p className="mt-8 max-w-sm text-base leading-8 text-white">
@@ -691,58 +725,65 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
                 businesses. We bring a touch of pure cleanliness, care, and
                 perfection to every space we serve.
               </p>
-               <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                              <FaFacebook />
-                            </a>
-                          
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                              <FaInstagram />
-                            </a>
-                          
-                           <a 
-                                          href="https://wa.me/96595511354"
-                          
-                            target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp />
-                          </a>
-                          </div>
+              <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
+                <a
+                  href="https://www.facebook.com/alnawrasplus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/alnawraspluskuwait"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+
+                <a
+                  href="https://wa.me/96595511354"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp />
+                </a>
+              </div>
             </div>
 
             <div className="text-left">
-  <h3 className="text-2xl font-black text-[#ffd366]">
-    Quick links
-  </h3>
+              <h3 className="text-2xl font-black text-[#ffd366]">
+                Quick links
+              </h3>
 
-  <ul className="mt-8 space-y-0 text-base font-bold">
-    {[
-      { name: "Home", href: "/" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
-      { name: "About", href: "/about" },
-    ].map((link, index) => (
-      <li
-        key={link.name}
-        className={`px-9 py-4 ${
-          index === 0
-            ? "border border-white text-[#ffd366]"
-            : "text-white"
-        }`}
-      >
-        <Link href={link.href}>
-          {link.name}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+              <ul className="mt-8 space-y-0 text-base font-bold">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Services", href: "/services" },
+                  { name: "Contact", href: "/contact" },
+                  { name: "About", href: "/about" },
+                ].map((link, index) => (
+                  <li
+                    key={link.name}
+                    className={`px-9 py-4 ${
+                      index === 0
+                        ? "border border-white text-[#ffd366]"
+                        : "text-white"
+                    }`}
+                  >
+                    <Link href={link.href}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <div className="text-left">
-              <h3 className="text-2xl font-black text-[#ffd366]">Contact information</h3>
+              <h3 className="text-2xl font-black text-[#ffd366]">
+                Contact information
+              </h3>
               <p className="mt-8 text-base leading-8 text-white ltr">
-                Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-                Restaurant
+                Farwaniya block 1 street 74 building 15
               </p>
             </div>
 
@@ -751,8 +792,8 @@ At Al Nawras Plus, we offer fast and professional cleaning services in
                 Subscribe for special offers
               </h3>
               <p className="mt-8 text-base leading-8 text-white">
-                Subscribe to receive exclusive cleaning tips, special offers, and
-                the latest updates on our professional services.
+                Subscribe to receive exclusive cleaning tips, special offers,
+                and the latest updates on our professional services.
               </p>
               <form className="mt-10 flex items-end gap-0">
                 <label className="sr-only" htmlFor="footer-email">

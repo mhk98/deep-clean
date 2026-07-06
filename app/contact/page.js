@@ -32,35 +32,39 @@ function Header() {
           <div className="space-y-1 text-center text-xs text-slate-100">
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
               <span>☎ +96595511354</span>
-              <span>✉ awesa7547@gmail</span>
+              <span>✉ alnawraspluskuwait@gmail.com</span>
             </div>
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-5">
               <span>📍</span>
-              <span>
-                Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-                Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-                Restaurant
-              </span>
+              <span>Farwaniya block 1 street 74 building 15</span>
             </div>
           </div>
-        
-             <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
-           
-                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook />
-                                      </a>
-                                     
-                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram />
-                                      </a>
-                                      
-                                     <a 
-                                                    href="https://wa.me/96595511354"
-                                    
-                                      target="_blank" rel="noopener noreferrer">
-                                      <FaWhatsapp />
-                                    </a>
-                                    </div>
+
+          <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
+            <a
+              href="https://www.facebook.com/alnawrasplus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </a>
+
+            <a
+              href="https://www.instagram.com/alnawraspluskuwait"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://wa.me/96595511354"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
           <div className="flex justify-center md:justify-end">
             <TranslateWidget />
           </div>
@@ -78,48 +82,48 @@ function Header() {
             </div>
           </div>
 
-<div className="flex flex-1 items-center justify-center gap-8">
-             <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-               href="/"
-             >
-               Main
-             </Link>
-             <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-               href="/services"
-             >
-               Services
-             </Link>
-             <Link
-               className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
-               href="/contact"
-             >
-               Contact us
-             </Link>
-             <Link
-               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-               href="/about"
-             >
-               About the company
-             </Link>
-           </div>
+          <div className="flex flex-1 items-center justify-center gap-8">
+            <Link
+              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+              href="/"
+            >
+              Main
+            </Link>
+            <Link
+              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+              href="/services"
+            >
+              Services
+            </Link>
+            <Link
+              className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
+              href="/contact"
+            >
+              Contact us
+            </Link>
+            <Link
+              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+              href="/about"
+            >
+              About the company
+            </Link>
+          </div>
           <div className="hidden items-center gap-4 lg:flex">
-             <a
-               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
-               href="https://wa.me/96595511354"
-               target="_blank"
-               rel="noopener noreferrer"
-             >
-               Call now <span>→</span>
-             </a>
-             <Link
-               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
-               href="/contact"
-             >
-               Book now <span>→</span>
-             </Link>
-           </div>
+            <a
+              className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
+              href="https://wa.me/96595511354"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Call now <span>→</span>
+            </a>
+            <Link
+              className="inline-flex h-11 min-w-32 items-center justify-center gap-3 rounded-br-3xl bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
+              href="/contact"
+            >
+              Book now <span>→</span>
+            </Link>
+          </div>
         </div>
       </nav>
     </header>
@@ -166,58 +170,61 @@ function Footer() {
               businesses. We bring a touch of pure cleanliness, care, and
               perfection to every space we serve.
             </p>
-           <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
-             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-               <FaFacebook />
-             </a>
-                          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-               <FaInstagram />
-             </a>
-                         <a 
-                           href="https://wa.me/96595511354"
-           
-             target="_blank" rel="noopener noreferrer">
-             <FaWhatsapp />
-           </a>
-           </div>
+            <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
+              <a
+                href="https://www.facebook.com/alnawrasplus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/alnawraspluskuwait"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
           </div>
 
           <div className="text-left">
-  <h3 className="text-2xl font-black text-[#ffd366]">
-    Quick links
-  </h3>
+            <h3 className="text-2xl font-black text-[#ffd366]">Quick links</h3>
 
-  <ul className="mt-8 space-y-0 text-base font-bold">
-    {[
-      { name: "Home", href: "/" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
-      { name: "About", href: "/about" },
-    ].map((link, index) => (
-      <li
-        key={link.name}
-        className={`px-9 py-4 ${
-          index === 0
-            ? "border border-white text-[#ffd366]"
-            : "text-white"
-        }`}
-      >
-        <Link href={link.href}>
-          {link.name}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+            <ul className="mt-8 space-y-0 text-base font-bold">
+              {[
+                { name: "Home", href: "/" },
+                { name: "Services", href: "/services" },
+                { name: "Contact", href: "/contact" },
+                { name: "About", href: "/about" },
+              ].map((link, index) => (
+                <li
+                  key={link.name}
+                  className={`px-9 py-4 ${
+                    index === 0
+                      ? "border border-white text-[#ffd366]"
+                      : "text-white"
+                  }`}
+                >
+                  <Link href={link.href}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <div>
             <h3 className="text-xl font-black text-[#ffd366]">
               Contact information
             </h3>
             <p className="mt-6 text-sm leading-7 text-slate-200">
-              Ali Fahad Al Dewailah St, Block 3, Al Farwaniya, 80003, Kuwait
-              Shop No. 26, Al Khuraj Commercial Complex, Nearby Asfour Canary
-              Restaurant
+              Farwaniya block 1 street 74 building 15
             </p>
           </div>
 
@@ -289,34 +296,37 @@ export default function ContactPage() {
               customers.
             </p>
 
-          
-
             <div className="mt-10 flex gap-8 text-4xl font-black text-[#0d274d]">
-               
-           
-                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook />
-                                      </a>
-                                    
-                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram />
-                                      </a>
-                                    
-                                     <a 
-                                                    href="https://wa.me/96595511354"
-                                    
-                                      target="_blank" rel="noopener noreferrer">
-                                      <FaWhatsapp />
-                                    </a>
-                                    </div>
+              <a
+                href="https://www.facebook.com/alnawrasplus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+
+              <a
+                href="https://www.instagram.com/alnawraspluskuwait"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
 
             <div className="mt-14 space-y-8 text-[#333333]">
               <div>
                 <h3 className="text-2xl font-black">Visit Us</h3>
                 <p className="mt-4 text-base leading-7 text-[#707070]">
-                  Al Farwaniyah, Kuwait
-                  <br />
-                  (Near Canary Restaurant, Ali Fahad Al Dewailah St)
+                  Farwaniya block 1 street 74 building 15
                 </p>
               </div>
               <div>
@@ -326,7 +336,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-black">Email Us</h3>
                 <p className="mt-3 text-base text-[#707070]">
-                  awesa7547@gmail
+                  alnawraspluskuwait@gmail.com
                 </p>
               </div>
             </div>
@@ -374,7 +384,7 @@ export default function ContactPage() {
           className="h-full w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Al%20Farwaniya%20Kuwait&output=embed"
+          src="https://www.google.com/maps?q=Farwaniya%20block%201%20street%2074%20building%2015&output=embed"
           title="Al Nawras Plus location map"
         />
       </section>
