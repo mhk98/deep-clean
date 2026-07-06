@@ -33,75 +33,87 @@ const services = [
   {
     title: "House Cleaning",
     image: "/services/house-cleaning.jpg",
-    text: "House Cleaning Kuwait for spotless homes, villas, and family living spaces.",
+    text: "House Cleaning Kuwait for spotless homes and villas in Farwaniya, Hawalli, and nearby areas.",
   },
   {
     title: "Sofa Cleaning",
     image: "/services/sofa-cleaning.jpg",
-    text: "Sofa Cleaning Kuwait with shampoo care for stains, dust, and fabric freshness.",
+    text: "Sofa Cleaning Kuwait with shampoo care for homes in Al Asimah, Hawalli, and Salmiya.",
   },
   {
     title: "Office Cleaning",
     image: "/services/office-cleaning.jpg",
-    text: "Office Cleaning Kuwait for productive, hygienic, and well-maintained workspaces.",
+    text: "Office Cleaning Kuwait for companies in Kuwait City, Farwaniya, Ahmadi, and Jahra.",
   },
   {
     title: "Apartment Cleaning",
     image: "/services/apartment-cleaning.jpg",
-    text: "Apartment Cleaning Kuwait for flats, rentals, and move-ready residential spaces.",
+    text: "Apartment Cleaning Kuwait for flats and rentals across Farwaniya, Hawalli, and Mubarak Al-Kabeer.",
   },
   {
     title: "Carpet Cleaning",
     image: "/services/carpet-cleaning.jpg",
-    text: "Carpet Cleaning Kuwait for fresh rugs, cleaner floors, and stain removal.",
+    text: "Carpet Cleaning Kuwait for fresh rugs and cleaner floors across Kuwait governorates.",
   },
   {
     title: "Window Cleaning",
     image: "/services/window-cleaning.jpg",
-    text: "Crystal-clear window cleaning services for homes and offices in Kuwait.",
+    text: "Crystal-clear window cleaning services for homes, offices, and buildings in Kuwait.",
   },
   {
     title: "Floor Cleaning",
     image: "/services/floor-cleaning.jpg",
-    text: "Expert floor cleaning and polishing services across Kuwait.",
+    text: "Expert floor cleaning and polishing services in Al Asimah, Farwaniya, Hawalli, and Ahmadi.",
   },
   {
     title: "Kitchen Cleaning",
     image: "/services/kitchen-cleaning.jpg",
-    text: "Detailed kitchen cleaning in Kuwait with grease and stain removal.",
+    text: "Detailed kitchen cleaning in Kuwait with grease removal for homes and commercial kitchens.",
   },
   {
     title: "Bathroom Cleaning",
     image: "/services/bathroom-cleaning.jpg",
-    text: "Sanitized bathroom cleaning service for hygienic homes in Kuwait.",
+    text: "Sanitized bathroom cleaning service for hygienic homes, apartments, and offices in Kuwait.",
   },
   {
     title: "Deep Cleaning",
     image: "/services/deep-cleaning.jpg",
-    text: "Deep Cleaning Kuwait for homes, villas, apartments, offices, and buildings.",
+    text: "Deep Cleaning Kuwait for homes, villas, apartments, offices, and buildings in every governorate.",
   },
   {
     title: "Move In / Move Out Cleaning",
     image: "/services/move-cleaning.jpg",
-    text: "Specialized move in/move out cleaning service in Kuwait.",
+    text: "Specialized move in and move out cleaning service for tenants and landlords in Kuwait.",
   },
   {
     title: "Janitorial Service",
     image: "/services/janitorial-cleaning.jpg",
-    text: "Reliable janitorial services for offices, buildings, and facilities.",
+    text: "Reliable janitorial services for offices, buildings, clinics, and facilities across Kuwait.",
   },
   {
     title: "Chandelier Cleaning",
     image: "/services/chandelier-cleaning.jpg",
-    text: "Careful chandelier and decorative light fixture cleaning in Kuwait.",
+    text: "Careful chandelier and decorative light fixture cleaning for villas, homes, and halls in Kuwait.",
   },
 ];
 
 const reasons = [
-  ["Top Rated Cleaning Team", "Our trained cleaners deliver top rated cleaning company Kuwait quality for homes, villas, apartments, and offices."],
-  ["Fast & Reliable Service", "We arrive on time for cleaning services near me searches across Kuwait with clear quality standards."],
-  ["Eco-Friendly Products", "Safe cleaning supplies for daily use inside your home and office."],
-  ["Affordable Kuwait Coverage", "Affordable cleaning services Kuwait customers can book in all governorates with flexible options."],
+  [
+    "Skilled Experts",
+    "A trained team for home and office cleaning with care and attention.",
+  ],
+  [
+    "Fast & Reliable Service",
+    "We arrive on time and work with clear quality standards.",
+  ],
+  [
+    "Eco-Friendly Products",
+    "Safe cleaning supplies for daily use inside your home.",
+  ],
+  [
+    "Available Across Kuwait",
+    "We serve Al Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak Al-Kabeer Governorates.",
+  ],
 ];
 
 const partners = [
@@ -121,14 +133,46 @@ const testimonials = [
 ];
 
 const faqs = [
-  "How can I book cleaning services in Kuwait?",
-  "Do you offer cleaning services near me in Kuwait?",
-  "Which areas do you cover for cleaning services in Kuwait?",
-  "Do you provide professional house cleaning staff?",
-  "How long does office cleaning take in Kuwait?",
-  "Do you offer same day cleaning service guarantee?",
-  "What areas do you cover for cleaning services?",
-  "Are your cleaning products safe for homes and offices?",
+  {
+    question: "How can I book cleaning services in Kuwait?",
+    answer:
+      "You can book Al Nawras Plus cleaning services by calling, sending a WhatsApp message, or using the contact page. Share your service type, location, property size, and preferred cleaning time.",
+  },
+  {
+    question: "Do you offer cleaning services near me in Kuwait?",
+    answer:
+      "Yes. We provide cleaning services near customers across Kuwait, including Al Asimah / Capital Governorate, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak Al-Kabeer.",
+  },
+  {
+    question: "Which areas do you cover for cleaning services in Kuwait?",
+    answer:
+      "Our team covers Kuwait City, Farwaniya, Hawalli, Salmiya, Ahmadi, Jahra, Mubarak Al-Kabeer, and nearby residential and commercial areas.",
+  },
+  {
+    question: "Do you provide professional house cleaning staff?",
+    answer:
+      "Yes. We provide trained cleaning staff for house cleaning, villa cleaning, apartment cleaning, office cleaning, deep cleaning, sofa cleaning, and carpet cleaning.",
+  },
+  {
+    question: "How long does office cleaning take in Kuwait?",
+    answer:
+      "Office cleaning time depends on the office size, number of rooms, washrooms, pantry areas, and cleaning frequency. After receiving the details, we suggest the right team and schedule.",
+  },
+  {
+    question: "Do you offer same day cleaning service?",
+    answer:
+      "Same day cleaning service is available when our schedule allows. It is best to contact us early with your area and service request for faster booking.",
+  },
+  {
+    question: "What cleaning services do you provide?",
+    answer:
+      "We provide house cleaning, apartment cleaning, office cleaning, sofa cleaning, carpet cleaning, window cleaning, floor cleaning, kitchen cleaning, bathroom cleaning, deep cleaning, move in cleaning, move out cleaning, janitorial service, chandelier cleaning, and mattress cleaning.",
+  },
+  {
+    question: "Are your cleaning products safe for homes and offices?",
+    answer:
+      "We use cleaning products and methods suitable for regular homes, offices, apartments, villas, and commercial spaces, with attention to hygiene and surface care.",
+  },
 ];
 
 const localSeoKeywords = [
@@ -189,7 +233,7 @@ function LogoBadge() {
         <div className="grid h-full w-full place-items-center rounded-full border border-[#f8be43]/60 bg-[radial-gradient(circle_at_50%_25%,#263d5e_0,#050505_58%)]">
           <div className="text-[13px] font-black leading-none text-[#f8be43]">
             <div className="text-3xl">⌂</div>
-Al Nawras Plus
+            Al Nawras Plus
             <div className="mt-1 text-[8px] tracking-wide text-white">
               CLEANING SERVICES
             </div>
@@ -201,8 +245,25 @@ Al Nawras Plus
 }
 
 export default function Home() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen overflow-hidden bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="relative z-30">
         <div className="bg-[#0d274d] text-white shadow-[0_3px_8px_rgba(13,39,77,.35)]">
           <div
@@ -213,34 +274,39 @@ export default function Home() {
             <div className="space-y-2 text-center text-sm text-slate-100">
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 ltr">
                 <span>☎ +96595511354</span>
-                <span>✉ awesa7547@gmail</span>
+                <span>✉ alnawraspluskuwait@gmail.com</span>
               </div>
               <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 leading-6">
                 <span>📍</span>
-                <span>
-Farwaniya block 1 street 74 building 15
-                </span>
+                <span>Farwaniya block 1 street 74 building 15</span>
               </div>
             </div>
-           
 
-             <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
-           
-                                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook />
-                                      </a>
-                                    
-                                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram />
-                                      </a>
-                                  
-                                     <a 
-                                                    href="https://wa.me/96595511354"
-                                    
-                                      target="_blank" rel="noopener noreferrer">
-                                      <FaWhatsapp />
-                                    </a>
-                                    </div>
+            <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
+              <a
+                href="https://www.facebook.com/alnawrasplus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+
+              <a
+                href="https://www.instagram.com/alnawraspluskuwait"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
             <div className="flex justify-center md:justify-end">
               <TranslateWidget />
             </div>
@@ -258,32 +324,35 @@ Farwaniya block 1 street 74 building 15
               </div>
             </div>
 
-<div className="flex flex-1 flex-wrap items-center justify-center gap-3 md:gap-8" dir="ltr">
-               <Link
-                 className="inline-flex h-12 min-w-28 items-center justify-center border-2 border-[#0d274d] px-6 text-base font-black text-[#0d274d] transition md:h-14 md:min-w-36 md:px-8 md:text-lg"
-                 href="/"
-               >
-                 Home
-               </Link>
-               <Link
-                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
-                 href="/services"
-               >
-                 Services
-               </Link>
-               <Link
-                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
-                 href="/contact"
-               >
-                 Contact
-               </Link>
-               <Link
-                 className="inline-flex text-base font-bold text-[#0d274d] md:text-lg"
-                 href="/about"
-               >
-                 About
-               </Link>
-             </div>
+            <div
+              className="flex flex-1 items-center justify-center gap-8"
+              dir="ltr"
+            >
+              <Link
+                className="inline-flex h-14 min-w-36 items-center justify-center border-2 border-[#0d274d] px-8 text-lg font-black text-[#0d274d] transition"
+                href="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/services"
+              >
+                Services
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/contact"
+              >
+                Contact
+              </Link>
+              <Link
+                className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
+                href="/about"
+              >
+                About
+              </Link>
+            </div>
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
               <Button
@@ -316,8 +385,8 @@ Farwaniya block 1 street 74 building 15
 <p className="mb-7 text-lg font-black text-[#1d6a29]">
               Cleaning Services Kuwait
             </p>
-<h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              Al Nawras Plus - Best Cleaning Company Kuwait
+            <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
+              Al Nawras Plus General Cleaning
               <br />
               Professional Cleaning Services Kuwait
             </h1>
@@ -326,9 +395,11 @@ Farwaniya block 1 street 74 building 15
             </h2>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#213d63]">
               Al Nawras Plus is a trusted cleaning company Kuwait customers choose for
-              affordable cleaning services Kuwait wide. Our team handles house cleaning,
-              sofa cleaning, apartment cleaning, carpet cleaning, villa cleaning, and
-              building cleaning with eco-friendly products and spotless results.
+              affordable cleaning services across Al Asimah, Hawalli, Farwaniya,
+              Ahmadi, Jahra, and Mubarak Al-Kabeer Governorates. Our team handles
+              house cleaning, sofa cleaning, apartment cleaning, carpet cleaning,
+              villa cleaning, and building cleaning with eco-friendly products and
+              spotless results.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button>Book Now</Button>
@@ -380,14 +451,14 @@ Farwaniya block 1 street 74 building 15
               className="mx-auto h-[350px] w-full max-w-[540px] rounded-2xl object-cover shadow-sm"
               src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1100&q=80"
             />
-            <div className="mt-12 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
-<Link
+            <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
                 href="https://wa.me/96595511354"
@@ -411,8 +482,8 @@ Farwaniya block 1 street 74 building 15
               As a top rated cleaning company Kuwait residents and businesses trust, we
               provide high-quality cleaning services you can rely on every time. Our
               professional cleaning team specializes in residential cleaning, commercial
-              cleaning, villa cleaning Kuwait, and building cleaning Kuwait with
-              eco-friendly solutions.
+              cleaning, villa cleaning Kuwait, and building cleaning Kuwait for homes,
+              offices, apartments, and facilities across Kuwait governorates.
             </p>
             <div className="mt-9 grid overflow-hidden rounded-bl-[28px] rounded-tr-[28px] border border-[#f1dc97] bg-white text-center shadow-sm md:max-w-xl md:grid-cols-3">
               {[
@@ -493,12 +564,14 @@ Farwaniya block 1 street 74 building 15
                 <div key={title}>
                   <div className="mb-3 text-2xl text-[#f8be43]">✦</div>
                   <h3 className="font-bold text-[#f8be43]">{title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-200">{text}</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
-            <div className="mt-8 inline-flex max-w-full flex-wrap overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
-<a
+            <div className="mt-8 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.55)]">
+              <a
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 border-2 border-[#f8be43] bg-white px-7 text-sm font-bold text-[#0d274d] transition hover:bg-slate-50"
                 href="https://wa.me/96595511354"
                 target="_blank"
@@ -507,13 +580,13 @@ Farwaniya block 1 street 74 building 15
                 <span>←</span>
                 Call Now
               </a>
-<Link
+              <Link
                 className="inline-flex h-12 min-w-36 items-center justify-center gap-3 bg-[#ffd366] px-7 text-sm font-bold text-[#092346] transition hover:bg-[#f8be43]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
             </div>
           </div>
           <img
@@ -549,10 +622,12 @@ Farwaniya block 1 street 74 building 15
                   dir="ltr"
                   key={name + index}
                 >
-                  <div className="text-xl tracking-[4px] text-[#f8be43]">★★★★★</div>
+                  <div className="text-xl tracking-[4px] text-[#f8be43]">
+                    ★★★★★
+                  </div>
                   <p className="mt-6 text-sm leading-7 text-[#687486]">
-                    Excellent service and a professional team. They cleaned carefully
-                    and on time, and the result was amazing.
+                    Excellent service and a professional team. They cleaned
+                    carefully and on time, and the result was amazing.
                   </p>
                   <strong className="mt-7 block text-sm text-black">
                     — {name}
@@ -577,8 +652,8 @@ Farwaniya block 1 street 74 building 15
                   Before Services Limited
                 </p>
                 <p className="mt-4 text-sm leading-6 text-slate-200">
-Get up to 20% off your first cleaning order with the Al Nawras Plus
-                   team.
+                  Get up to 20% off your first cleaning order with the Al Nawras
+                  Plus team.
                 </p>
               </div>
               <div className="relative hidden h-full min-h-48 bg-[#f8be43] md:block">
@@ -592,26 +667,26 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </div>
           </div>
 
-<div className="mt-5 flex justify-center">
-             <div className="inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
-               <Link
-                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
-                 href="/contact"
-               >
-                 <span>←</span>
-                 Book Now
-               </Link>
-               <a
-                 className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
-                 href="https://wa.me/96595511354"
-                 target="_blank"
-                 rel="noopener noreferrer"
-               >
-                 <span>←</span>
-                 Call Now
-               </a>
-             </div>
-           </div>
+          <div className="mt-5 flex justify-center">
+            <div className="inline-flex overflow-hidden rounded-br-[22px] rounded-tl-[22px] shadow-[0_0_12px_rgba(13,39,77,.16)]">
+              <Link
+                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#ffd366] px-4 text-xs font-bold text-[#092346]"
+                href="/contact"
+              >
+                <span>←</span>
+                Book Now
+              </Link>
+              <a
+                className="inline-flex h-9 min-w-28 items-center justify-center gap-2 bg-[#0d274d] px-4 text-xs font-bold text-[#ffd366]"
+                href="https://wa.me/96595511354"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>←</span>
+                Call Now
+              </a>
+            </div>
+          </div>
 
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-5 md:grid-cols-4">
             {partners.map((partner) => (
@@ -619,7 +694,9 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
                 className="flex h-32 items-center justify-center gap-5 border-[6px] border-[#f0f1f3] bg-white text-xl font-black text-[#8f949b]"
                 key={partner.name}
               >
-                <span className="p-3 text-2xl text-[#70757c]">{partner.mark}</span>
+                <span className="p-3 text-2xl text-[#70757c]">
+                  {partner.mark}
+                </span>
                 <span>{partner.name}</span>
               </div>
             ))}
@@ -632,7 +709,8 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Areas <span className="font-black text-[#0d274d]">We Cover</span>
+                Government{" "}
+                <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
                 <div className="h-full w-24 bg-[#0d274d]" />
@@ -643,22 +721,21 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               Local Cleaning Services Across Kuwait
             </h3>
             <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-[#4c5d76] md:mx-0">
-              We deliver professional cleaning services in all governorates of Kuwait.
-              If you are searching for cleaning services near me, our team is ready
-              to reach your home, apartment, villa, office, or building quickly,
-              efficiently, and with the highest quality. We serve Kuwait City,
-              Farwaniya, Hawalli, Salmiya, Jabriya, Mahboula, Fahaheel, Mangaf,
-              Ahmadi, Jahra, and nearby residential and commercial areas.
+              We deliver professional cleaning services in all governorates of
+              Kuwait, including Al Asimah / Capital Governorate, Hawalli Governorate,
+              Farwaniya Governorate, Ahmadi Governorate, Jahra Governorate, and
+              Mubarak Al-Kabeer Governorate. Wherever you are, our team is ready
+              to serve you quickly, efficiently, and with the highest quality.
             </p>
 
             <ul className="mx-auto mt-10 max-w-xl text-base font-black leading-8 text-[#243955] md:mx-0">
               {[
-                "Al-Asimah Governorate → Capital Governorate",
-                "Hawalli Governorate → Hawalli Governorate",
-                "Farwaniya Governorate → Farwaniya Governorate",
-                "Mubarak Al-Kabeer Governorate → Mubarak Al-Kabeer Governorate",
-                "Al-Ahmadi Governorate → Al-Ahmadi Governorate",
-                "Al-Jahra Governorate → Al-Jahra Governorate",
+                "Cleaning services in Al Asimah / Capital Governorate",
+                "Cleaning company serving Hawalli Governorate",
+                "House and apartment cleaning in Farwaniya Governorate",
+                "Residential cleaning in Mubarak Al-Kabeer Governorate",
+                "Villa and office cleaning in Ahmadi Governorate",
+                "Deep cleaning and building cleaning in Jahra Governorate",
               ].map((area) => (
                 <li
                   className="border-b border-dashed border-[#d8cdb3] py-4 last:border-b-0"
@@ -669,25 +746,14 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               ))}
             </ul>
 
-            <div className="mx-auto mt-10 flex max-w-xl flex-wrap justify-center gap-2 md:mx-0 md:justify-start">
-              {localSeoKeywords.map((keyword) => (
-                <span
-                  className="border border-[#d8cdb3] bg-white px-3 py-2 text-xs font-black text-[#0d274d]"
-                  key={keyword}
-                >
-                  {keyword}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-12 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
-<Link
+            <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.45)]">
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
                 <span>←</span>
                 Book Now
-</Link>
+              </Link>
               <a
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#0d274d] px-8 text-lg font-black text-[#ffd366]"
                 href="https://wa.me/96595511354"
@@ -705,28 +771,21 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               Top Rated Cleaning Company Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-              As Kuwait's best cleaning company, Al Nawras Plus offers fast and reliable
-              cleaning services Kuwait customers can book at affordable prices. Our
-              trusted cleaning experts provide house cleaning Kuwait, deep cleaning Kuwait,
-              office cleaning Kuwait, sofa cleaning Kuwait, apartment cleaning Kuwait,
-              carpet cleaning Kuwait, villa cleaning Kuwait, and building cleaning Kuwait
-              with eco-friendly products.
+              At Al Nawras Plus, we offer fast and professional cleaning
+              services in all areas of Kuwait, from Kuwait City and Farwaniya
+              to Hawalli, Ahmadi, Jahra, and Mubarak Al-Kabeer, with a commitment
+              to the highest standards of hygiene and quality every time.
             </p>
 
             <h3 className="mt-8 text-2xl font-black text-[#1d6a29]">
               Serving Popular Areas in Kuwait
             </h3>
             <p className="mt-8 text-base font-bold leading-8 text-[#6d6d6d]">
-              We provide cleaning services Kuwait City customers can book quickly,
-              plus cleaning company Farwaniya coverage, house cleaning Hawalli,
-              deep cleaning Salmiya, sofa cleaning Jabriya, apartment cleaning
-              Mahboula, carpet cleaning Fahaheel, villa cleaning Mangaf, building
-              cleaning Ahmadi, and cleaning services Jahra. We also cover Abdullah
-              Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha, Jaber
-              Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya, Qurtuba,
-              Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya, Sabah Al-Nasser,
-              Rumaithiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, and
-              nearby areas.
+              Abdullah Al-Salem, Adailiya, Bneid Al-Qar, Daiya, Dasma, Faiha,
+              Jaber Al-Ahmad, Kaifan, Khaldiya, Mansouriya, Nuzha, Qadisiya,
+              Qurtuba, Rawda, Shamiya, Surra, Yarmouk, Rabia, Ishbiliya,
+              Abdullah Al-Mubarak, Sabah Al-Nasser, Firdous, Rumaithiya,
+              Salmiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
             </p>
 
 <div className="mt-8 border-t border-[#d8d2c8] pt-8">
@@ -742,8 +801,12 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
                   "Every corner is cleaned with care using eco-friendly products for healthy spaces."],
               ].map((group) => (
                 <div className="mt-8 first:mt-0" key={group[0]}>
-                  <h4 className="text-lg font-black text-[#b14f24]">✓ {group[0]}</h4>
-                  <p className="mt-2 text-base leading-8 text-[#5e7189]">{group[1]}</p>
+                  <h4 className="text-lg font-black text-[#b14f24]">
+                    ✓ {group[0]}
+                  </h4>
+                  <p className="mt-2 text-base leading-8 text-[#5e7189]">
+                    {group[1]}
+                  </p>
                 </div>
               ))}
             </div>
@@ -753,15 +816,22 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
 
       <section id="faq" className="px-5 py-24">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-5xl font-black text-emerald-800">📌 FAQ</h2>
+          <h2 className="text-center text-5xl font-black text-emerald-800">
+            📌 FAQ
+          </h2>
           <div className="mt-14 grid gap-x-24 md:grid-cols-2">
             {faqs.map((faq) => (
-              <button
-                className="border-b-2 border-slate-200 py-4 text-right text-xl font-black leading-8 text-[#243955]"
-                key={faq}
+              <article
+                className="border-b-2 border-slate-200 py-5 text-right"
+                key={faq.question}
               >
-                {faq}
-              </button>
+                <h3 className="text-xl font-black leading-8 text-[#243955]">
+                  {faq.question}
+                </h3>
+                <p className="mt-3 text-sm font-bold leading-7 text-[#687486]">
+                  {faq.answer}
+                </p>
+              </article>
             ))}
           </div>
         </div>
@@ -778,8 +848,8 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
               Your space is about to shine like never before.
             </p>
 
-            <div className="mt-10 inline-flex max-w-full flex-wrap justify-center overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
-<Link
+            <div className="mt-10 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_18px_rgba(255,211,102,.5)]">
+              <Link
                 className="inline-flex h-14 min-w-40 items-center justify-center gap-3 bg-[#ffd366] px-8 text-lg font-black text-[#092346]"
                 href="/contact"
               >
@@ -798,63 +868,76 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
             </div>
           </div>
 
-          <div className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]" dir="ltr">
+          <div
+            className="ltr mt-32 grid gap-14 md:grid-cols-[1.15fr_.8fr_1fr_1.35fr]"
+            dir="ltr"
+          >
             <div className="text-left">
               <LogoBadge />
 <p className="mt-8 max-w-sm text-base leading-8 text-white">
                 Al Nawras Plus is a cleaning company Kuwait customers trust for
                 professional cleaning services, house cleaning, office cleaning,
                 sofa cleaning, apartment cleaning, carpet cleaning, and deep cleaning
-                across Kuwait with affordable prices.
+                across Al Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and
+                Mubarak Al-Kabeer Governorates with affordable prices.
               </p>
-               <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                              <FaFacebook />
-                            </a>
-                          
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                              <FaInstagram />
-                            </a>
-                          
-                           <a 
-                                          href="https://wa.me/96595511354"
-                          
-                            target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp />
-                          </a>
-                          </div>
+              <div className="mt-7 flex gap-4 text-2xl font-black text-[#ffd366]">
+                <a
+                  href="https://www.facebook.com/alnawrasplus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/alnawraspluskuwait"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+
+                <a
+                  href="https://wa.me/96595511354"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp />
+                </a>
+              </div>
             </div>
 
             <div className="text-left">
-  <h3 className="text-2xl font-black text-[#ffd366]">
-    Quick links
-  </h3>
+              <h3 className="text-2xl font-black text-[#ffd366]">
+                Quick links
+              </h3>
 
-  <ul className="mt-8 space-y-0 text-base font-bold">
-    {[
-      { name: "Home", href: "/" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
-      { name: "About", href: "/about" },
-    ].map((link, index) => (
-      <li
-        key={link.name}
-        className={`px-9 py-4 ${
-          index === 0
-            ? "border border-white text-[#ffd366]"
-            : "text-white"
-        }`}
-      >
-        <Link href={link.href}>
-          {link.name}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+              <ul className="mt-8 space-y-0 text-base font-bold">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Services", href: "/services" },
+                  { name: "Contact", href: "/contact" },
+                  { name: "About", href: "/about" },
+                ].map((link, index) => (
+                  <li
+                    key={link.name}
+                    className={`px-9 py-4 ${
+                      index === 0
+                        ? "border border-white text-[#ffd366]"
+                        : "text-white"
+                    }`}
+                  >
+                    <Link href={link.href}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <div className="text-left">
-              <h3 className="text-2xl font-black text-[#ffd366]">Contact information</h3>
+              <h3 className="text-2xl font-black text-[#ffd366]">
+                Contact information
+              </h3>
               <p className="mt-8 text-base leading-8 text-white ltr">
                 Farwaniya block 1 street 74 building 15
               </p>
@@ -865,8 +948,8 @@ Get up to 20% off your first cleaning order with the Al Nawras Plus
                 Subscribe for special offers
               </h3>
               <p className="mt-8 text-base leading-8 text-white">
-                Subscribe to receive exclusive cleaning tips, special offers, and
-                the latest updates on our professional services.
+                Subscribe to receive exclusive cleaning tips, special offers,
+                and the latest updates on our professional services.
               </p>
               <form className="mt-10 flex items-end gap-0">
                 <label className="sr-only" htmlFor="footer-email">

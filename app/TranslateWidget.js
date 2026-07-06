@@ -8,24 +8,29 @@ function setCookie(name, value) {
 }
 
 export default function TranslateWidget() {
-const [language, setLanguage] = useState("ar");
+  const [language, setLanguage] = useState(() => {
+    if (typeof window === "undefined") {
+      return "ar";
+    }
 
-   useEffect(() => {
-     function removeTranslateGap() {
-       document.body.style.top = "0px";
-       document.documentElement.style.marginTop = "0px";
+    return window.localStorage.getItem("preferredLanguage") === "en"
+      ? "en"
+      : "ar";
+  });
 
-       document.querySelectorAll("body > .skiptranslate").forEach((element) => {
-         element.style.display = "none";
-         element.style.height = "0";
-         element.style.visibility = "hidden";
-       });
-     }
+  useEffect(() => {
+    function removeTranslateGap() {
+      document.body.style.top = "0px";
+      document.documentElement.style.marginTop = "0px";
 
-     const savedLanguage = window.localStorage.getItem("preferredLanguage");
-     const nextLanguage = savedLanguage === "en" ? "en" : "ar";
-     setLanguage(nextLanguage);
-     setCookie("googtrans", nextLanguage === "en" ? "/en/en" : "/en/ar");
+      document.querySelectorAll("body > .skiptranslate").forEach((element) => {
+        element.style.display = "none";
+        element.style.height = "0";
+        element.style.visibility = "hidden";
+      });
+    }
+
+    setCookie("googtrans", language === "en" ? "/en/en" : "/en/ar");
 
     if (window.google?.translate?.TranslateElement) {
       return;
@@ -57,7 +62,7 @@ const [language, setLanguage] = useState("ar");
     return () => {
       window.clearInterval(gapTimer);
     };
-  }, []);
+  }, [language]);
 
   function handleLanguageChange(event) {
     const nextLanguage = event.target.value;
