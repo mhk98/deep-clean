@@ -224,6 +224,217 @@ body[style] {
   }
 }
 
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  section,
+  footer {
+    padding-left: clamp(1rem, 5vw, 1.25rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.25rem) !important;
+  }
+
+  nav > .ltr {
+    min-height: auto !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  nav .flex-1 {
+    width: 100%;
+    flex: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  nav a {
+    max-width: 100%;
+    min-width: min(100%, 9rem) !important;
+    min-height: 2.75rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-align: center;
+  }
+
+  nav .flex-1 > a {
+    display: inline-flex !important;
+    width: 100%;
+    min-width: 0 !important;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(13, 39, 77, 0.18);
+    background: #ffffff;
+    box-shadow: 0 6px 16px rgba(13, 39, 77, 0.08);
+    font-size: 0.92rem !important;
+    line-height: 1.2;
+  }
+
+  nav .flex-1 > a[class*="border-2"] {
+    border-color: #0d274d;
+    background: #fff7df;
+  }
+
+  header .ltr {
+    width: 100%;
+  }
+
+  header span,
+  footer span,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  a,
+  button,
+  input,
+  textarea {
+    overflow-wrap: anywhere;
+  }
+
+  h1,
+  .text-5xl,
+  .md\:text-5xl,
+  .md\:text-6xl {
+    font-size: clamp(2rem, 11vw, 3rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  h2,
+  .text-4xl,
+  .text-3xl {
+    font-size: clamp(1.55rem, 8vw, 2.25rem) !important;
+    line-height: 1.18 !important;
+  }
+
+  br {
+    display: none;
+  }
+
+  .min-h-\[690px\],
+  .min-h-\[620px\] {
+    min-height: auto !important;
+  }
+
+  .h-\[350px\],
+  .h-80,
+  .h-72,
+  .h-\[460px\] {
+    height: auto !important;
+    min-height: 240px;
+  }
+
+  img.h-\[350px\],
+  img.h-80,
+  img.h-72 {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gap-16,
+  .gap-14,
+  .gap-12 {
+    gap: 2rem !important;
+  }
+
+  .mt-32,
+  .mt-28,
+  .mt-16,
+  .mt-14,
+  .mt-12 {
+    margin-top: 2.5rem !important;
+  }
+
+  .py-24,
+  .md\:py-28,
+  .py-20,
+  .py-16 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .px-16,
+  .px-10,
+  .px-8,
+  .p-12,
+  .p-10,
+  .p-8,
+  .p-7,
+  .p-6 {
+    padding: 1.25rem !important;
+  }
+
+  .inline-flex:has(> a),
+  .inline-flex:has(> a + a),
+  .inline-flex:has(> a + .inline-flex),
+  .inline-flex:has(> .inline-flex + .inline-flex) {
+    display: flex;
+    width: 100%;
+    max-width: 22rem;
+    flex-wrap: wrap;
+  }
+
+  .inline-flex > a,
+  .inline-flex > .inline-flex {
+    flex: 1 1 10rem;
+    min-width: 0 !important;
+  }
+
+  a[class*="min-w-"],
+  button[class*="min-w-"] {
+    min-width: 0 !important;
+  }
+
+  .services-slider,
+  .testimonial-slider {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .services-track,
+  .testimonial-track {
+    animation-duration: 36s;
+    gap: 1rem;
+  }
+
+  .services-track article {
+    width: min(82vw, 320px) !important;
+  }
+
+  .testimonial-track article {
+    width: min(82vw, 330px) !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  footer form {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 1rem;
+  }
+
+  footer form button,
+  footer form input {
+    width: 100%;
+  }
+}
+
 @keyframes services-slide {
   from {
     transform: translateX(0);

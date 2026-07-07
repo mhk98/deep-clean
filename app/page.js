@@ -1,98 +1,98 @@
 import Link from "next/link";
+import Image from "next/image";
 import TranslateWidget from "./TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
-// const services = [
-//   {
-//     title: "Sofa Cleaning",
-//     image:
-//       "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80",
-//     text: "Deep and safe cleaning removes dust and stains while preserving upholstery and surfaces.",
-//   },
-//   {
-//     title: "Chandelier Cleaning",
-//     image:
-//       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
-//     text: "Precise chandelier and glass cleaning with full attention to sparkling details.",
-//   },
-//   {
-//     title: "Home Cleaning",
-//     image:
-//       "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80",
-//     text: "Complete home cleaning for kitchens, rooms, and living areas using professional equipment.",
-//   },
-//   {
-//     title: "Window Cleaning",
-//     image:
-//       "https://images.unsplash.com/photo-1596394723269-b2cbca4e6313?auto=format&fit=crop&w=1000&q=80",
-//     text: "Window and frame cleaning with dust and stain removal for a clear shine.",
-//   },
-// ];
 
 const services = [
   {
     title: "House Cleaning",
     image: "/services/house-cleaning.jpg",
+    href: "/services/house-cleaning-kuwait",
+    alt: "House cleaning service in Kuwait for homes and villas",
     text: "House Cleaning Kuwait for spotless homes and villas in Farwaniya, Hawalli, and nearby areas.",
   },
   {
     title: "Sofa Cleaning",
     image: "/services/sofa-cleaning.jpg",
+    href: "/services/sofa-cleaning-kuwait",
+    alt: "Sofa cleaning service in Kuwait for fabric sofas and majlis seating",
     text: "Sofa Cleaning Kuwait with shampoo care for homes in Al Asimah, Hawalli, and Salmiya.",
   },
   {
     title: "Office Cleaning",
     image: "/services/office-cleaning.jpg",
+    href: "/services/office-cleaning-kuwait",
+    alt: "Office cleaning service in Kuwait for companies and workplaces",
     text: "Office Cleaning Kuwait for companies in Kuwait City, Farwaniya, Ahmadi, and Jahra.",
   },
   {
     title: "Apartment Cleaning",
     image: "/services/apartment-cleaning.jpg",
+    href: "/services/apartment-cleaning-kuwait",
+    alt: "Apartment cleaning service in Kuwait for flats and rentals",
     text: "Apartment Cleaning Kuwait for flats and rentals across Farwaniya, Hawalli, and Mubarak Al-Kabeer.",
   },
   {
     title: "Carpet Cleaning",
     image: "/services/carpet-cleaning.jpg",
+    href: "/services/carpet-cleaning-kuwait",
+    alt: "Carpet cleaning service in Kuwait for rugs and carpets",
     text: "Carpet Cleaning Kuwait for fresh rugs and cleaner floors across Kuwait governorates.",
   },
   {
     title: "Window Cleaning",
     image: "/services/window-cleaning.jpg",
+    href: "/services/window-cleaning-kuwait",
+    alt: "Window cleaning service in Kuwait for homes and offices",
     text: "Crystal-clear window cleaning services for homes, offices, and buildings in Kuwait.",
   },
   {
     title: "Floor Cleaning",
     image: "/services/floor-cleaning.jpg",
+    href: "/services",
+    alt: "Floor cleaning and polishing service in Kuwait",
     text: "Expert floor cleaning and polishing services in Al Asimah, Farwaniya, Hawalli, and Ahmadi.",
   },
   {
     title: "Kitchen Cleaning",
     image: "/services/kitchen-cleaning.jpg",
+    href: "/services/kitchen-cleaning-kuwait",
+    alt: "Kitchen cleaning service in Kuwait with grease removal",
     text: "Detailed kitchen cleaning in Kuwait with grease removal for homes and commercial kitchens.",
   },
   {
     title: "Bathroom Cleaning",
     image: "/services/bathroom-cleaning.jpg",
+    href: "/services/bathroom-cleaning-kuwait",
+    alt: "Bathroom cleaning service in Kuwait for homes and offices",
     text: "Sanitized bathroom cleaning service for hygienic homes, apartments, and offices in Kuwait.",
   },
   {
     title: "Deep Cleaning",
     image: "/services/deep-cleaning.jpg",
+    href: "/services/deep-cleaning-kuwait",
+    alt: "Deep cleaning service in Kuwait for homes offices and villas",
     text: "Deep Cleaning Kuwait for homes, villas, apartments, offices, and buildings in every governorate.",
   },
   {
     title: "Move In / Move Out Cleaning",
     image: "/services/move-cleaning.jpg",
+    href: "/services/move-in-move-out-cleaning-kuwait",
+    alt: "Move in and move out cleaning service in Kuwait",
     text: "Specialized move in and move out cleaning service for tenants and landlords in Kuwait.",
   },
   {
     title: "Janitorial Service",
     image: "/services/janitorial-cleaning.jpg",
+    href: "/services/janitorial-services-kuwait",
+    alt: "Janitorial cleaning service in Kuwait for offices and facilities",
     text: "Reliable janitorial services for offices, buildings, clinics, and facilities across Kuwait.",
   },
   {
     title: "Chandelier Cleaning",
     image: "/services/chandelier-cleaning.jpg",
+    href: "/services/chandelier-cleaning-kuwait",
+    alt: "Chandelier cleaning service in Kuwait for villas and halls",
     text: "Careful chandelier and decorative light fixture cleaning for villas, homes, and halls in Kuwait.",
   },
 ];
@@ -126,10 +126,30 @@ const partners = [
 ];
 
 const testimonials = [
-  "Ahmed Al-Harbi",
-  "Fatima Al-Nashat",
-  "Mohammed Al-Salem",
-  "Noura Al-Khaled",
+  {
+    name: "Ahmed Al-Harbi",
+    service: "Villa deep cleaning in Farwaniya",
+    text:
+      "The team arrived on time, cleaned every room carefully, and left the villa fresh and ready for guests.",
+  },
+  {
+    name: "Fatima Al-Nashat",
+    service: "Sofa and carpet cleaning in Hawalli",
+    text:
+      "Our sofa and carpets looked much cleaner after the visit. Booking on WhatsApp was quick and easy.",
+  },
+  {
+    name: "Mohammed Al-Salem",
+    service: "Office cleaning in Kuwait City",
+    text:
+      "Reliable office cleaning with good attention to desks, floors, pantry, and washrooms.",
+  },
+  {
+    name: "Noura Al-Khaled",
+    service: "Apartment cleaning in Salmiya",
+    text:
+      "Professional cleaners, clear communication, and a spotless apartment at the end of the service.",
+  },
 ];
 
 const faqs = [
@@ -176,22 +196,22 @@ const faqs = [
 ];
 
 const localSeoKeywords = [
-  "Cleaning Services Kuwait City",
-  "Cleaning Company Farwaniya",
-  "House Cleaning Hawalli",
-  "Deep Cleaning Salmiya",
-  "Office Cleaning Kuwait City",
-  "Sofa Cleaning Jabriya",
-  "Apartment Cleaning Mahboula",
-  "Carpet Cleaning Fahaheel",
-  "Villa Cleaning Mangaf",
-  "Building Cleaning Ahmadi",
-  "Cleaning Services Jahra",
-  "Cleaning Company Near Me Kuwait",
-  "Same Day Cleaning Service Kuwait",
-  "Cleaning Services Farwaniya",
-  "Cleaning Services Hawalli",
-  "Cleaning Services Salmiya",
+  ["Cleaning Services Kuwait City", "/services"],
+  ["Cleaning Company Farwaniya", "/services"],
+  ["House Cleaning Hawalli", "/services/house-cleaning-kuwait"],
+  ["Deep Cleaning Salmiya", "/services/deep-cleaning-kuwait"],
+  ["Office Cleaning Kuwait City", "/services/office-cleaning-kuwait"],
+  ["Sofa Cleaning Jabriya", "/services/sofa-cleaning-kuwait"],
+  ["Apartment Cleaning Mahboula", "/services/apartment-cleaning-kuwait"],
+  ["Carpet Cleaning Fahaheel", "/services/carpet-cleaning-kuwait"],
+  ["Villa Cleaning Mangaf", "/services/house-cleaning-kuwait"],
+  ["Building Cleaning Ahmadi", "/services/deep-cleaning-kuwait"],
+  ["Cleaning Services Jahra", "/services"],
+  ["Cleaning Company Near Me Kuwait", "/contact"],
+  ["Same Day Cleaning Service Kuwait", "/contact"],
+  ["Cleaning Services Farwaniya", "/services"],
+  ["Cleaning Services Hawalli", "/services"],
+  ["Cleaning Services Salmiya", "/services"],
 ];
 
 function Button({
@@ -257,12 +277,34 @@ export default function Home() {
       },
     })),
   };
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Al Nawras Plus",
+    review: testimonials.map((testimonial) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: testimonial.name,
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody: testimonial.text,
+    })),
+  };
 
   return (
     <main className="min-h-screen overflow-hidden bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <header className="relative z-30">
         <div className="bg-[#0d274d] text-white shadow-[0_3px_8px_rgba(13,39,77,.35)]">
@@ -386,9 +428,9 @@ export default function Home() {
               Cleaning Services Kuwait
             </p>
             <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              Al Nawras Plus General Cleaning
+              Professional Cleaning Services in Kuwait
               <br />
-              Professional Cleaning Services Kuwait
+              by Al Nawras Plus
             </h1>
             <h2 className="mt-10 text-2xl font-black text-[#102b55] md:text-3xl">
               House Cleaning Kuwait, Office Cleaning Kuwait & Deep Cleaning Kuwait
@@ -446,10 +488,13 @@ export default function Home() {
       <section id="about" className="bg-white px-5 py-24 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-[1fr_1.05fr]">
           <div className="order-2 text-center md:order-1">
-            <img
-              alt="Cleaning team"
+            <Image
+              alt="Al Nawras Plus cleaning team serving homes and offices in Kuwait"
               className="mx-auto h-[350px] w-full max-w-[540px] rounded-2xl object-cover shadow-sm"
+              height={350}
+              priority
               src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1100&q=80"
+              width={540}
             />
             <div className="mt-12 inline-flex overflow-hidden rounded-br-[32px] rounded-tl-[32px] shadow-[0_0_20px_rgba(118,97,255,.28)]">
               <Link
@@ -520,14 +565,18 @@ export default function Home() {
           <div className="services-slider ltr mx-auto mt-16 max-w-5xl overflow-hidden">
             <div className="services-track flex w-max gap-10">
               {[...services, ...services].map((service, index) => (
-                <article
-                  className="w-[320px] shrink-0 bg-white shadow-[0_10px_22px_rgba(13,39,77,.08)] md:w-[470px]"
+                <Link
+                  aria-label={`View ${service.title} service details`}
+                  className="block w-[320px] shrink-0 bg-white text-left shadow-[0_10px_22px_rgba(13,39,77,.08)] transition hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(13,39,77,.14)] md:w-[470px]"
+                  href={service.href}
                   key={service.title + index}
                 >
-                  <img
-                    alt={service.title}
+                  <Image
+                    alt={service.alt}
                     className="h-48 w-full object-cover md:h-56"
+                    height={224}
                     src={service.image}
+                    width={470}
                   />
                   <div className="p-8" dir="ltr">
                     <h3 className="border-l-2 border-[#0d274d] pl-5 text-2xl font-black text-[#0d274d]">
@@ -537,7 +586,7 @@ export default function Home() {
                       {service.text}
                     </p>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
@@ -589,10 +638,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <img
-            alt="Professional cleaners"
+          <Image
+            alt="Professional cleaning staff for residential and commercial cleaning in Kuwait"
             className="h-72 w-full rounded-lg object-cover"
+            height={288}
             src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1000&q=80"
+            width={380}
           />
         </div>
       </section>
@@ -616,22 +667,24 @@ export default function Home() {
 
           <div className="testimonial-slider ltr mx-auto mt-8 max-w-3xl overflow-hidden">
             <div className="testimonial-track flex w-max gap-5">
-              {[...testimonials, ...testimonials].map((name, index) => (
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
                 <article
                   className="relative min-h-[178px] w-[330px] shrink-0 rounded-sm bg-white p-8 text-left shadow-[0_8px_25px_rgba(13,39,77,.08)] md:w-[370px]"
                   dir="ltr"
-                  key={name + index}
+                  key={testimonial.name + index}
                 >
                   <div className="text-xl tracking-[4px] text-[#f8be43]">
                     ★★★★★
                   </div>
                   <p className="mt-6 text-sm leading-7 text-[#687486]">
-                    Excellent service and a professional team. They cleaned
-                    carefully and on time, and the result was amazing.
+                    {testimonial.text}
                   </p>
                   <strong className="mt-7 block text-sm text-black">
-                    — {name}
+                    — {testimonial.name}
                   </strong>
+                  <span className="mt-1 block text-xs font-bold text-[#8b8f96]">
+                    {testimonial.service}
+                  </span>
                   <span className="absolute bottom-6 left-7 text-5xl leading-none text-[#d9ecfb]">
                     ”
                   </span>
@@ -811,6 +864,36 @@ export default function Home() {
               ))}
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-3xl">
+            <p className="section-title-line text-sm font-bold text-[#f0a600]">
+              Popular Searches
+            </p>
+            <h2 className="mt-4 text-3xl font-black text-[#0d274d]">
+              Cleaning Services Near You in Kuwait
+            </h2>
+            <p className="mt-5 text-base leading-8 text-[#4c5d76]">
+              Find local cleaning help for Kuwait City, Farwaniya, Hawalli,
+              Salmiya, Ahmadi, Jahra, and nearby areas. These quick links help
+              customers reach the most relevant cleaning service or booking page.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            {localSeoKeywords.map(([keyword, href]) => (
+              <Link
+                className="border border-[#ffd366] bg-[#fff9e8] px-4 py-3 text-sm font-black text-[#0d274d] transition hover:bg-[#ffd366]"
+                href={href}
+                key={keyword}
+              >
+                {keyword}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

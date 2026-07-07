@@ -48,6 +48,7 @@ const localBusinessSchema = {
 };
 
 export const metadata = {
+  metadataBase: new URL("https://alnawraspluskuwait.com"),
   title:
     "Cleaning Services Kuwait | Cleaning Company Across Kuwait Governorates",
   description:
@@ -56,6 +57,26 @@ export const metadata = {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title:
+      "Cleaning Services Kuwait | Al Nawras Plus Cleaning Company",
+    description:
+      "Book professional house, office, sofa, apartment, carpet, deep, villa, and building cleaning services across Kuwait governorates.",
+    url: "/",
+    siteName: "Al Nawras Plus",
+    locale: "en_KW",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title:
+      "Cleaning Services Kuwait | Al Nawras Plus Cleaning Company",
+    description:
+      "Professional cleaning services across Al Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak Al-Kabeer.",
   },
   keywords: [
     "Cleaning Services Kuwait",

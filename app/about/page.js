@@ -129,31 +129,6 @@ function Header() {
               <FaWhatsapp />
             </a>
           </div>
-          <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
-            <a
-              href="https://www.facebook.com/alnawrasplus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook />
-            </a>
-
-            <a
-              href="https://www.instagram.com/alnawraspluskuwait"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
-
-            <a
-              href="https://wa.me/96595511354"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp />
-            </a>
-          </div>
           <div className="flex justify-center md:justify-end">
             <TranslateWidget />
           </div>
@@ -223,7 +198,7 @@ function Footer() {
     <footer className="bg-[#0d274d] px-5 py-20 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="text-sm font-black text-[#ffd366]">Let's talk</p>
+          <p className="text-sm font-black text-[#ffd366]">Let&apos;s talk</p>
           <h2 className="mt-6 text-2xl font-black">
             Clean, fresh, and flawless
           </h2>

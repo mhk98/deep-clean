@@ -141,7 +141,7 @@ function Footer() {
     <footer className="bg-[#0d274d] px-5 py-20 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="text-sm font-black text-[#ffd366]">Let's talk</p>
+          <p className="text-sm font-black text-[#ffd366]">Let&apos;s talk</p>
           <h2 className="mt-6 text-2xl font-black">
             Clean, fresh, and flawless
           </h2>

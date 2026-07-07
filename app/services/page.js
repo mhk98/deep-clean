@@ -556,7 +556,7 @@ function Header() {
               <span>Farwaniya block 1 street 74 building 15</span>
             </div>
           </div>
-          <div className="mt-10 flex gap-8 text-4xl font-black text-[#0d274d]">
+          <div className="flex justify-center gap-6 text-lg font-black md:justify-end">
             <a
               href="https://www.facebook.com/alnawrasplus"
               target="_blank"
@@ -650,7 +650,7 @@ function Footer() {
     <footer className="bg-[#0d274d] px-5 py-20 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="text-sm font-black text-[#ffd366]">Let's talk</p>
+          <p className="text-sm font-black text-[#ffd366]">Let&apos;s talk</p>
           <h2 className="mt-6 text-2xl font-black">
             Clean, fresh, and flawless
           </h2>
