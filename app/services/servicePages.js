@@ -129,6 +129,30 @@ export const servicePages = [
     ],
   },
   {
+    slug: "floor-cleaning-kuwait",
+    title: "Floor Cleaning Kuwait",
+    metaTitle: "Floor Cleaning Kuwait | Tile & Marble Floor Cleaning",
+    metaDescription:
+      "Professional floor cleaning in Kuwait for tiles, marble, corridors, homes, apartments, offices, and buildings across all Kuwait governorates.",
+    intro:
+      "Al Nawras Plus provides floor cleaning Kuwait customers can book for homes, apartments, villas, offices, corridors, and common areas. We clean tile, marble, and hard floors to remove dust, stains, buildup, and post-renovation residue.",
+    localCopy:
+      "Floor cleaning is available in Farwaniya, Hawalli, Al Asimah, Ahmadi, Jahra, and Mubarak Al-Kabeer for residential and commercial properties.",
+    benefits: [
+      "Tile, marble, corridor, and common area cleaning",
+      "Dust, dirt, stain, and residue removal",
+      "Suitable after renovation, moving, or regular maintenance",
+      "Available for homes, offices, apartments, and buildings",
+    ],
+    keywords: [
+      "Floor Cleaning Kuwait",
+      "Floor Polishing Kuwait",
+      "Tile Floor Cleaning Kuwait",
+      "Marble Floor Polishing Kuwait",
+      "Floor Cleaning Farwaniya",
+    ],
+  },
+  {
     slug: "deep-cleaning-kuwait",
     title: "Deep Cleaning Kuwait",
     metaTitle: "Deep Cleaning Kuwait | Home, Villa & Office Deep Clean",

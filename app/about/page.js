@@ -1,6 +1,7 @@
 import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ServiceMenu from "../components/ServiceMenu";
 
 export const metadata = {
   title:
@@ -152,11 +153,12 @@ function Header() {
             >
               Main
             </Link>
+            <ServiceMenu />
             <Link
               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
-              href="/services"
+              href="/blog"
             >
-              Services
+              Blog
             </Link>
             <Link
               className="hidden text-base font-black text-[#0d274d] md:inline-flex"

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TranslateWidget from "./TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ServiceMenu from "./components/ServiceMenu";
 
 const services = [
   {
@@ -49,7 +50,7 @@ const services = [
   {
     title: "Floor Cleaning",
     image: "/services/floor-cleaning.jpg",
-    href: "/services",
+    href: "/services/floor-cleaning-kuwait",
     alt: "Floor cleaning and polishing service in Kuwait",
     text: "Expert floor cleaning and polishing services in Al Asimah, Farwaniya, Hawalli, and Ahmadi.",
   },
@@ -376,11 +377,12 @@ export default function Home() {
               >
                 Home
               </Link>
+              <ServiceMenu className="hidden md:block" />
               <Link
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
-                href="/services"
+                href="/blog"
               >
-                Services
+                Blog
               </Link>
               <Link
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"

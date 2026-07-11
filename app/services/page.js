@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ServiceMenu from "../components/ServiceMenu";
+import { API_BASE_URL } from "../lib/api";
 import { servicePages } from "./servicePages";
 
 const serviceLandingLinks = {
@@ -604,11 +606,12 @@ function Header() {
             >
               Home
             </Link>
+            <ServiceMenu active />
             <Link
-              className="inline-flex h-12 min-w-32 items-center justify-center border-2 border-[#0d274d] px-7 text-base font-black text-[#0d274d]"
-              href="/services"
+              className="hidden text-base font-black text-[#0d274d] md:inline-flex"
+              href="/blog"
             >
-              Services ▾
+              Blog
             </Link>
             <Link
               className="hidden text-base font-black text-[#0d274d] md:inline-flex"
@@ -773,6 +776,8 @@ function Footer() {
 }
 
 function ServiceDetail({ service }) {
+  const serviceHref = service.href || serviceLandingLinks[service.id] || "/services";
+
   return (
     <div className="overflow-hidden rounded-sm border border-slate-200 bg-white shadow-[0_4px_20px_rgba(13,39,77,.10)]">
       <div className="border-l-4 border-[#0d274d] p-8">
@@ -813,7 +818,7 @@ function ServiceDetail({ service }) {
         <div className="mt-8">
           <Link
             className="inline-flex h-11 items-center justify-center bg-[#ffd366] px-6 text-sm font-black text-[#092346]"
-            href={serviceLandingLinks[service.id]}
+            href={serviceHref}
           >
             View {service.title} SEO page
           </Link>
@@ -906,8 +911,55 @@ function SeoContent() {
 }
 
 export default function ServicesPage() {
-  const [activeId, setActiveId] = useState(services[0].id);
-  const activeService = services.find((s) => s.id === activeId);
+  const [displayedServices, setDisplayedServices] = useState([]);
+  const [activeId, setActiveId] = useState(null);
+  const activeService =
+    displayedServices.find((s) => s.id === activeId) || displayedServices[0] || null;
+
+  useEffect(() => {
+    const normalizeList = (value, fallback = []) => {
+      if (Array.isArray(value)) return value;
+      if (!value) return fallback;
+      try {
+        const parsed = JSON.parse(value);
+        if (Array.isArray(parsed)) return parsed;
+      } catch (error) {
+        // Admin may send comma/newline strings instead of JSON arrays.
+      }
+      return String(value)
+        .split(/[,\n]/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+    };
+
+    fetch(`${API_BASE_URL}/services`)
+      .then((response) => (response.ok ? response.json() : null))
+      .then((payload) => {
+        const apiServices = (payload?.data || []).map((item) => ({
+            id: `api-${item.id}`,
+            title: item.title,
+            description:
+              item.excerpt || item.content || item.metaDescription || "",
+            priceNote: item.metaDescription || "Contact us for a custom quote.",
+            offers: normalizeList(item.benefits).length
+              ? normalizeList(item.benefits)
+              : ["Professional cleaning service", "Available across Kuwait"],
+            howWeWork:
+              item.excerpt || "Book online or contact us on WhatsApp for details.",
+            specialOffer: "Available by appointment",
+            priceName: item.title,
+            priceRange: "Contact for price",
+            packageNote: "Custom packages available",
+            href: `/services/${item.slug}`,
+        }));
+        setDisplayedServices(apiServices);
+        setActiveId(apiServices[0]?.id || null);
+      })
+      .catch(() => {
+        setDisplayedServices([]);
+        setActiveId(null);
+      });
+  }, []);
 
   return (
     <main
@@ -931,21 +983,28 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 grid gap-8 md:grid-cols-[1fr_220px]">
-            <ServiceDetail service={activeService} />
+            {activeService ? (
+              <ServiceDetail service={activeService} />
+            ) : (
+              <div className="rounded-sm border border-slate-200 bg-white p-8 text-sm font-bold text-slate-500">
+                No services published yet.
+              </div>
+            )}
 
             <aside className="flex flex-col gap-3">
-              {services.map((service) => (
-                <button
+              {displayedServices.map((service) => (
+                <Link
                   key={service.id}
-                  onClick={() => setActiveId(service.id)}
-                  className={`rounded-sm px-5 py-4 text-sm font-black transition-colors ${
+                  href={service.href || serviceLandingLinks[service.id]}
+                  onMouseEnter={() => setActiveId(service.id)}
+                  className={`rounded-sm px-5 py-4 text-center text-sm font-black transition-colors ${
                     service.id === activeId
                       ? "bg-[#ffd366] text-[#0d274d]"
                       : "bg-[#0d274d] text-white hover:bg-[#163a6e]"
                   }`}
                 >
                   {service.title}
-                </button>
+                </Link>
               ))}
             </aside>
           </div>
