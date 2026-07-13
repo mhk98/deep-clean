@@ -4,7 +4,7 @@ import TranslateWidget from "../../TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import ServiceMenu from "../../components/ServiceMenu";
 import { getService as getApiService } from "../../lib/api";
-import { serviceAreas } from "../servicePages";
+import { getServicePage, serviceAreas } from "../servicePages";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +29,8 @@ export async function generateMetadata({ params }) {
 }
 
 async function loadService(slug) {
+  const localService = getServicePage(slug);
+
   try {
     const service = await getApiService(slug);
     const normalizeList = (value, fallback = []) => {
@@ -46,24 +48,42 @@ async function loadService(slug) {
         .filter(Boolean);
     };
 
+    const title = service.title || localService?.title;
     return {
-      title: service.title,
-      metaTitle: service.metaTitle || `${service.title} | Al Nawras Plus`,
+      title,
+      metaTitle:
+        localService?.metaTitle || service.metaTitle || `${title} | Al Nawras Plus`,
       metaDescription:
-        service.metaDescription || service.excerpt || service.content || "",
-      intro: service.excerpt || service.content || service.metaDescription || "",
+        localService?.metaDescription ||
+        service.metaDescription ||
+        service.excerpt ||
+        service.content ||
+        "",
+      intro:
+        localService?.intro ||
+        service.excerpt ||
+        service.content ||
+        service.metaDescription ||
+        "",
       localCopy:
+        localService?.localCopy ||
         service.metaDescription ||
         "Available across Kuwait governorates for homes, apartments, offices, villas, and commercial spaces.",
-      content: service.content || "",
-      image: service.image || "",
-      benefits: service.benefits?.length
-        ? normalizeList(service.benefits)
-        : ["Professional cleaning service", "Available across Kuwait"],
-      keywords: service.keywords?.length ? normalizeList(service.keywords) : [service.title],
+      content: localService?.content || service.content || "",
+      image: service.image || localService?.image || "",
+      benefits: localService?.benefits?.length
+        ? localService.benefits
+        : service.benefits?.length
+          ? normalizeList(service.benefits)
+          : ["Professional cleaning service", "Available across Kuwait"],
+      keywords: localService?.keywords?.length
+        ? localService.keywords
+        : service.keywords?.length
+          ? normalizeList(service.keywords)
+          : [title],
     };
   } catch (error) {
-    return null;
+    return localService || null;
   }
 }
 
