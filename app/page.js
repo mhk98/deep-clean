@@ -9,8 +9,8 @@ const services = [
     title: "House Cleaning",
     image: "/services/house-cleaning.jpg",
     href: "/services/house-cleaning-kuwait",
-    alt: "House cleaning service in Kuwait for homes and villas",
-    text: "House Cleaning Kuwait for spotless homes and villas in Farwaniya, Hawalli, and nearby areas.",
+    alt: "House cleaning services in Kuwait for homes villas and residential properties",
+    text: "House cleaning services in Kuwait for spotless homes, apartments, and villas in Farwaniya, Hawalli, and nearby areas.",
   },
   {
     title: "Sofa Cleaning",
@@ -23,15 +23,15 @@ const services = [
     title: "Office Cleaning",
     image: "/services/office-cleaning.jpg",
     href: "/services/office-cleaning-kuwait",
-    alt: "Office cleaning service in Kuwait for companies and workplaces",
-    text: "Office Cleaning Kuwait for companies in Kuwait City, Farwaniya, Ahmadi, and Jahra.",
+    alt: "Office cleaning services in Kuwait for companies workplaces and commercial spaces",
+    text: "Office cleaning services Kuwait businesses can book for offices, clinics, shops, and workplaces.",
   },
   {
     title: "Apartment Cleaning",
     image: "/services/apartment-cleaning.jpg",
     href: "/services/apartment-cleaning-kuwait",
-    alt: "Apartment cleaning service in Kuwait for flats and rentals",
-    text: "Apartment Cleaning Kuwait for flats and rentals across Farwaniya, Hawalli, and Mubarak Al-Kabeer.",
+    alt: "Apartment cleaning in Kuwait for flats studios and rental homes",
+    text: "Apartment cleaning Kuwait residents choose for studios, flats, rentals, and family apartments.",
   },
   {
     title: "Carpet Cleaning",
@@ -72,15 +72,15 @@ const services = [
     title: "Deep Cleaning",
     image: "/services/deep-cleaning.jpg",
     href: "/services/deep-cleaning-kuwait",
-    alt: "Deep cleaning service in Kuwait for homes offices and villas",
-    text: "Deep Cleaning Kuwait for homes, villas, apartments, offices, and buildings in every governorate.",
+    alt: "Deep cleaning services Kuwait for homes offices apartments and villas",
+    text: "Deep cleaning services Kuwait for homes, villas, apartments, offices, and buildings in every governorate.",
   },
   {
     title: "Move In / Move Out Cleaning",
     image: "/services/move-cleaning.jpg",
     href: "/services/move-in-move-out-cleaning-kuwait",
     alt: "Move in and move out cleaning service in Kuwait",
-    text: "Specialized move in and move out cleaning service for tenants and landlords in Kuwait.",
+    text: "Move in move out cleaning for tenants, landlords, owners, and property managers in Kuwait.",
   },
   {
     title: "Janitorial Service",
@@ -101,15 +101,15 @@ const services = [
 const reasons = [
   [
     "Skilled Experts",
-    "A trained team for home and office cleaning with care and attention.",
+    "A trained team for home cleaning services, office cleaning, villa cleaning, and deep cleaning with careful attention.",
   ],
   [
     "Fast & Reliable Service",
-    "We arrive on time and work with clear quality standards.",
+    "We arrive on time, prepare the right tools, and work with clear quality standards from start to finish.",
   ],
   [
     "Eco-Friendly Products",
-    "Safe cleaning supplies for daily use inside your home.",
+    "Safe cleaning supplies for daily use inside homes, apartments, offices, and family spaces.",
   ],
   [
     "Available Across Kuwait",
@@ -190,15 +190,25 @@ const faqs = [
       "We provide house cleaning, apartment cleaning, office cleaning, sofa cleaning, carpet cleaning, window cleaning, floor cleaning, kitchen cleaning, bathroom cleaning, deep cleaning, move in cleaning, move out cleaning, janitorial service, chandelier cleaning, and mattress cleaning.",
   },
   {
+    question: "Can I book affordable cleaning company services in Kuwait?",
+    answer:
+      "Yes. Al Nawras Plus offers affordable cleaning company services in Kuwait with prices based on the service type, property size, cleaning condition, and schedule.",
+  },
+  {
     question: "Are your cleaning products safe for homes and offices?",
     answer:
-      "We use cleaning products and methods suitable for regular homes, offices, apartments, villas, and commercial spaces, with attention to hygiene and surface care.",
+      "Before each job, our team chooses supplies based on the room, surface, and cleaning need. For family homes, apartments, villas, and offices, we focus on removing dust, grease, stains, and buildup while treating floors, fabrics, glass, and fixtures with care.",
   },
 ];
 
 const localSeoKeywords = [
-  ["Cleaning Services Kuwait City", "/services"],
+  ["Cleaning Service in Al Asimah", "/services"],
   ["Cleaning Company Farwaniya", "/services"],
+  ["Cleaning Service in Hawalli", "/services"],
+  ["Cleaning Service in Farwaniya", "/services"],
+  ["Cleaning Service in Ahmadi", "/services"],
+  ["Cleaning Service in Jahra", "/services"],
+  ["Cleaning Service in Mubarak Al-Kabeer", "/services"],
   ["House Cleaning Hawalli", "/services/house-cleaning-kuwait"],
   ["Deep Cleaning Salmiya", "/services/deep-cleaning-kuwait"],
   ["Office Cleaning Kuwait City", "/services/office-cleaning-kuwait"],
@@ -214,6 +224,26 @@ const localSeoKeywords = [
   ["Cleaning Services Hawalli", "/services"],
   ["Cleaning Services Salmiya", "/services"],
 ];
+
+export const metadata = {
+  title:
+    "Cleaning Services in Kuwait | Home, House & Office Cleaning",
+  description:
+    "Book professional cleaning services in Kuwait with Al Nawras Plus. Home cleaning, house cleaning, villa cleaning, apartment cleaning, office cleaning, deep cleaning, sofa cleaning, and move in move out cleaning across Al Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak Al-Kabeer.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title:
+      "Cleaning Services in Kuwait | Al Nawras Plus",
+    description:
+      "Professional home, house, apartment, villa, office, sofa, and deep cleaning services across Kuwait governorates.",
+    url: "/",
+    siteName: "Al Nawras Plus",
+    locale: "en_KW",
+    type: "website",
+  },
+};
 
 function Button({
   children,
@@ -426,24 +456,24 @@ export default function Home() {
         </div>
         <div className="mx-auto flex min-h-[620px] max-w-6xl items-center justify-center px-5 pb-24 pt-16">
           <div className="max-w-3xl text-center">
-<p className="mb-7 text-lg font-black text-[#1d6a29]">
-              Cleaning Services Kuwait
+            <p className="mb-7 text-lg font-black text-[#1d6a29]">
+              Cleaning Services in Kuwait
             </p>
             <h1 className="text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              Professional Cleaning Services in Kuwait
-              <br />
-              by Al Nawras Plus
+              Professional Cleaning Services in Kuwait for Homes & Offices
             </h1>
             <h2 className="mt-10 text-2xl font-black text-[#102b55] md:text-3xl">
-              House Cleaning Kuwait, Office Cleaning Kuwait & Deep Cleaning Kuwait
+              Home Cleaning, House Cleaning, Deep Cleaning & Office Cleaning
             </h2>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#213d63]">
-              Al Nawras Plus is a trusted cleaning company Kuwait customers choose for
-              affordable cleaning services across Al Asimah, Hawalli, Farwaniya,
-              Ahmadi, Jahra, and Mubarak Al-Kabeer Governorates. Our team handles
-              house cleaning, sofa cleaning, apartment cleaning, carpet cleaning,
-              villa cleaning, and building cleaning with eco-friendly products and
-              spotless results.
+              Al Nawras Plus is a trusted cleaning company in Kuwait for families,
+              tenants, landlords, offices, shops, and property managers who need
+              reliable cleaning service near me results. We provide house cleaning
+              services, home cleaning services, apartment cleaning Kuwait, villa
+              cleaning services, office cleaning services Kuwait, deep cleaning
+              services Kuwait, sofa cleaning services, and move in move out cleaning
+              across Al Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak
+              Al-Kabeer.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button>Book Now</Button>
@@ -491,7 +521,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-[1fr_1.05fr]">
           <div className="order-2 text-center md:order-1">
             <Image
-              alt="Al Nawras Plus cleaning team serving homes and offices in Kuwait"
+              alt="Al Nawras Plus professional cleaning services in Kuwait for homes apartments villas and offices"
               className="mx-auto h-[350px] w-full max-w-[540px] rounded-2xl object-cover shadow-sm"
               height={350}
               priority
@@ -521,16 +551,17 @@ export default function Home() {
           <div className="order-1 text-center md:order-2 md:text-right">
             <p className="text-2xl font-black text-[#24882e]">Committed!</p>
             <h2 className="mt-7 text-4xl font-black leading-tight text-[#102b55] md:text-6xl">
-              Trusted Cleaning Experts in
-              <br />
-              Kuwait
+              Trusted Cleaning Experts in Kuwait
             </h2>
             <p className="mt-10 text-lg leading-9 text-[#18365e]">
-              As a top rated cleaning company Kuwait residents and businesses trust, we
-              provide high-quality cleaning services you can rely on every time. Our
-              professional cleaning team specializes in residential cleaning, commercial
-              cleaning, villa cleaning Kuwait, and building cleaning Kuwait for homes,
-              offices, apartments, and facilities across Kuwait governorates.
+              When people search for professional cleaning services or an affordable
+              cleaning company Kuwait can trust, they want more than a quick surface
+              clean. They want a team that understands dust, humidity, daily family
+              use, office traffic, fabric stains, kitchen grease, bathroom hygiene,
+              and the small details that make a place feel fresh. Al Nawras Plus
+              provides residential cleaning Kuwait, commercial cleaning, villa
+              cleaning Kuwait, apartment cleaning, and building cleaning Kuwait with
+              practical methods, careful staff, and clear communication.
             </p>
             <div className="mt-9 grid overflow-hidden rounded-bl-[28px] rounded-tr-[28px] border border-[#f1dc97] bg-white text-center shadow-sm md:max-w-xl md:grid-cols-3">
               {[
@@ -557,12 +588,19 @@ export default function Home() {
 
       <section id="services" className="bg-[#fff4d8] px-5 py-24 md:py-28">
         <div className="mx-auto max-w-6xl text-center">
-<p className="section-title-line text-sm font-bold text-[#f0a600]">
+          <p className="section-title-line text-sm font-bold text-[#f0a600]">
             Professional Cleaning Services Kuwait
           </p>
           <h2 className="mt-4 text-3xl font-black text-[#0d274d]">
-            House Cleaning Kuwait, Sofa Cleaning Kuwait, Office Cleaning Kuwait & More
+            Practical Cleaning Help for Kuwait Homes, Villas & Workplaces
           </h2>
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#4c5d76]">
+            Share your area, property size, and the parts of the space that feel
+            hardest to keep clean. Al Nawras Plus prepares the visit around your
+            exact request, from family rooms and rental flats to majlis seating,
+            office pantries, washrooms, kitchens, dusty floors, glass, carpets,
+            and pre-handover cleaning.
+          </p>
 
           <div className="services-slider ltr mx-auto mt-16 max-w-5xl overflow-hidden">
             <div className="services-track flex w-max gap-10">
@@ -647,6 +685,112 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1000&q=80"
             width={380}
           />
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-24 md:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-14 md:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="section-title-line text-sm font-bold text-[#f0a600]">
+                Home, House & Commercial Cleaning
+              </p>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-[#0d274d] md:text-5xl">
+                Cleaning Service in Kuwait Built Around Your Space
+              </h2>
+              <p className="mt-7 text-base leading-8 text-[#4c5d76]">
+                Every property has a different cleaning need. A family home may
+                need regular dusting, floor care, kitchen cleaning, and bathroom
+                sanitization. A villa may need a larger team for rooms, stairs,
+                halls, windows, chandeliers, and outdoor-access areas. An
+                apartment may need compact but detailed cleaning before guests,
+                after renovation, or before a tenant moves in. An office needs a
+                clean reception, desks, pantry, washrooms, and high-touch surfaces
+                so staff and visitors feel comfortable.
+              </p>
+              <p className="mt-5 text-base leading-8 text-[#4c5d76]">
+                Al Nawras Plus brings these needs together in one professional
+                cleaning service in Kuwait. We help customers who search for
+                cleaning service near me, house cleaning services Kuwait, home
+                cleaning services, residential cleaning Kuwait, apartment cleaning
+                Kuwait, villa cleaning services, office cleaning services Kuwait,
+                and deep cleaning services Kuwait. Our goal is simple: clean the
+                right areas, use suitable products, respect your time, and leave
+                your space ready to use.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2">
+              {[
+                [
+                  "For Homes & Villas",
+                  "House cleaning services and villa cleaning services for bedrooms, living rooms, kitchens, bathrooms, floors, doors, surfaces, and everyday family spaces.",
+                ],
+                [
+                  "For Apartments",
+                  "Apartment cleaning Kuwait for studios, flats, rentals, furnished apartments, new tenants, landlords, and property managers.",
+                ],
+                [
+                  "For Offices",
+                  "Office cleaning services Kuwait for reception areas, workstations, meeting rooms, pantries, washrooms, floors, and high-touch points.",
+                ],
+                [
+                  "For Deep Cleaning",
+                  "Deep cleaning services Kuwait for seasonal cleaning, post-event cleaning, move in move out cleaning, dusty spaces, and detailed hygiene work.",
+                ],
+              ].map(([title, text]) => (
+                <article
+                  className="border border-[#e8edf3] bg-[#f8fafc] p-6 shadow-sm"
+                  key={title}
+                >
+                  <h3 className="text-xl font-black text-[#0d274d]">
+                    {title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-[#5e7189]">
+                    {text}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-10 border-t border-[#e9edf2] pt-14 md:grid-cols-3">
+            <div>
+              <h3 className="text-2xl font-black text-[#0d274d]">
+                What We Clean
+              </h3>
+              <p className="mt-5 text-base leading-8 text-[#4c5d76]">
+                Our team can clean floors, bathrooms, kitchens, bedrooms, living
+                rooms, majlis seating, sofas, carpets, windows, glass, balconies,
+                office desks, pantry areas, corridors, common areas, and fixtures.
+                Sofa cleaning services and carpet cleaning are available as
+                separate services or as part of a larger deep clean.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-[#0d274d]">
+                When To Book
+              </h3>
+              <p className="mt-5 text-base leading-8 text-[#4c5d76]">
+                Book regular cleaning for daily comfort, deep cleaning when dust
+                and buildup need extra attention, move in move out cleaning before
+                handover, and office cleaning on a daily, weekly, monthly, or
+                one-time schedule. Same day cleaning service may be available when
+                the team schedule allows.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-[#0d274d]">
+                How Pricing Works
+              </h3>
+              <p className="mt-5 text-base leading-8 text-[#4c5d76]">
+                As an affordable cleaning company Kuwait customers can contact
+                easily, we keep pricing based on the service type, property size,
+                number of rooms, condition, cleaning materials, and preferred time.
+                Share your location and photos when possible for a faster quote.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -764,7 +908,7 @@ export default function Home() {
           <div className="text-center md:text-right">
             <div className="inline-block">
               <h2 className="section-title-line justify-center text-3xl font-normal text-[#697486] md:justify-start">
-                Government{" "}
+                Governorates{" "}
                 <span className="font-black text-[#0d274d]">We Cover</span>
               </h2>
               <div className="mt-2 h-3 w-full bg-[#a8a5a0]">
@@ -777,20 +921,21 @@ export default function Home() {
             </h3>
             <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-[#4c5d76] md:mx-0">
               We deliver professional cleaning services in all governorates of
-              Kuwait, including Al Asimah / Capital Governorate, Hawalli Governorate,
-              Farwaniya Governorate, Ahmadi Governorate, Jahra Governorate, and
-              Mubarak Al-Kabeer Governorate. Wherever you are, our team is ready
-              to serve you quickly, efficiently, and with the highest quality.
+              Kuwait. Whether you need cleaning service in Al Asimah, cleaning
+              service in Hawalli, cleaning service in Farwaniya, cleaning service
+              in Ahmadi, cleaning service in Jahra, or cleaning service in Mubarak
+              Al-Kabeer, our team can plan the right visit for your home, apartment,
+              villa, office, shop, or building.
             </p>
 
             <ul className="mx-auto mt-10 max-w-xl text-base font-black leading-8 text-[#243955] md:mx-0">
               {[
-                "Cleaning services in Al Asimah / Capital Governorate",
-                "Cleaning company serving Hawalli Governorate",
-                "House and apartment cleaning in Farwaniya Governorate",
-                "Residential cleaning in Mubarak Al-Kabeer Governorate",
-                "Villa and office cleaning in Ahmadi Governorate",
-                "Deep cleaning and building cleaning in Jahra Governorate",
+                "Cleaning service in Al Asimah / Capital Governorate for homes, offices, and apartments",
+                "Cleaning service in Hawalli for house cleaning, sofa cleaning, and deep cleaning",
+                "Cleaning service in Farwaniya for residential cleaning, villas, and rentals",
+                "Cleaning service in Mubarak Al-Kabeer for apartments, homes, and offices",
+                "Cleaning service in Ahmadi for villa cleaning, office cleaning, and building cleaning",
+                "Cleaning service in Jahra for deep cleaning, move in move out cleaning, and regular cleaning",
               ].map((area) => (
                 <li
                   className="border-b border-dashed border-[#d8cdb3] py-4 last:border-b-0"
@@ -821,15 +966,16 @@ export default function Home() {
             </div>
           </div>
 
-<article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-left shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
+          <article className="rounded-[28px] border border-[#e3d6b7] bg-white/80 p-8 text-left shadow-[0_0_18px_rgba(13,39,77,.18)] md:p-12">
             <h2 className="text-3xl font-black leading-tight text-[#9b1b1f]">
-              Top Rated Cleaning Company Kuwait
+              Professional Cleaning Company in Kuwait
             </h2>
             <p className="mt-8 text-base leading-8 text-[#6d6d6d]">
-              At Al Nawras Plus, we offer fast and professional cleaning
-              services in all areas of Kuwait, from Kuwait City and Farwaniya
-              to Hawalli, Ahmadi, Jahra, and Mubarak Al-Kabeer, with a commitment
-              to the highest standards of hygiene and quality every time.
+              At Al Nawras Plus, we offer fast, organized, and professional cleaning
+              services in Kuwait for people who want a clean property without
+              stress. From Kuwait City and Farwaniya to Hawalli, Ahmadi, Jahra,
+              and Mubarak Al-Kabeer, we focus on clear booking, trained cleaners,
+              suitable cleaning products, and consistent hygiene standards.
             </p>
 
             <h3 className="mt-8 text-2xl font-black text-[#1d6a29]">
@@ -843,17 +989,17 @@ export default function Home() {
               Salmiya, Salwa, Shaab, Shuhada, Bayan, Hawally, Hitteen, Jabriya.
             </p>
 
-<div className="mt-8 border-t border-[#d8d2c8] pt-8">
+            <div className="mt-8 border-t border-[#d8d2c8] pt-8">
               {[
                 [
                   "Same Day Cleaning Service Available",
-                  "Same day cleaning service Kuwait customers can book for urgent home, office, apartment, and villa cleaning needs."],
+                  "Same day cleaning service Kuwait customers can request for urgent home, office, apartment, and villa cleaning needs when slots are available."],
                 [
                   "Residential & Commercial Coverage",
-                  "From homes, villas, and apartments to offices and buildings in Kuwait City, Farwaniya, Hawalli, Salmiya, Ahmadi, and Jahra, we handle everything professionally."],
+                  "From homes, villas, and apartments to offices, shops, clinics, and buildings in Kuwait City, Farwaniya, Hawalli, Salmiya, Ahmadi, and Jahra, we handle each job professionally."],
                 [
                   "Detailed & Hygienic Cleaning",
-                  "Every corner is cleaned with care using eco-friendly products for healthy spaces."],
+                  "Every visit focuses on practical detail, cleaner surfaces, better hygiene, and eco-friendly products suitable for healthy spaces."],
               ].map((group) => (
                 <div className="mt-8 first:mt-0" key={group[0]}>
                   <h4 className="text-lg font-black text-[#b14f24]">
