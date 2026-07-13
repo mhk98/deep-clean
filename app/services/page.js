@@ -856,15 +856,16 @@ function SeoContent() {
             Professional Cleaning Company Across Kuwait Governorates
           </h2>
           <p className="mt-4 text-sm leading-7 text-slate-600">
-            Al Nawras Plus offers professional cleaning services in Kuwait for
-            homes, apartments, villas, offices, buildings, and commercial
-            facilities. From regular house cleaning to deep cleaning, sofa
-            shampoo, carpet cleaning, floor polishing, window glass cleaning,
-            kitchen grease removal, bathroom sanitization, move in cleaning,
-            move out cleaning, and janitorial service, our team delivers clean,
-            organized, and hygienic spaces with reliable scheduling in Al
-            Asimah, Hawalli, Farwaniya, Ahmadi, Jahra, and Mubarak
-            Al-Kabeer Governorates.
+            Al Nawras Plus helps Kuwait residents and businesses keep every
+            space ready for daily use, guest visits, handovers, and busy work
+            schedules. Our cleaners handle houses, apartments, villas, offices,
+            buildings, and commercial locations with services such as routine
+            cleaning, deep cleaning, sofa shampooing, carpet care, floor
+            polishing, glass and window washing, kitchen grease treatment,
+            bathroom sanitizing, move-in and move-out cleaning, plus janitorial
+            support. Appointments are arranged across Al Asimah, Hawalli,
+            Farwaniya, Ahmadi, Jahra, and Mubarak Al-Kabeer Governorates with
+            careful timing and tidy results.
           </p>
         </div>
 
