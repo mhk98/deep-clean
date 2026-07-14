@@ -1,5 +1,6 @@
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api-nawras.onrender.com/api/v1";
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://api-nawras.onrender.com/api/v1";
 
 export async function apiGet(path, options = {}) {
   const response = await fetch(`${API_BASE_URL}${path}`, {
