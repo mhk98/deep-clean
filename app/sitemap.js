@@ -1,4 +1,5 @@
 export default function sitemap() {
+  const lastModified = new Date();
   return [
     {
       url: "https://alnawrasplus.com",
