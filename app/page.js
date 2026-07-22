@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TranslateWidget from "./TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import MobileNav from "./components/MobileNav";
 import ServiceMenu from "./components/ServiceMenu";
 
 const services = [
@@ -664,6 +665,11 @@ export default function Home() {
             className="ltr mx-auto flex min-h-[104px] max-w-6xl items-center justify-between gap-5 px-5"
             dir="ltr"
           >
+            <div className="relative h-16 w-16 shrink-0 self-center md:hidden">
+              <div className="absolute left-0 top-0 origin-top-left scale-50">
+                <LogoBadge />
+              </div>
+            </div>
             <div className="relative hidden w-40 self-stretch md:block">
               <div className="absolute -top-14 left-0">
                 <LogoBadge />
@@ -680,7 +686,7 @@ export default function Home() {
               >
                 Home
               </Link>
-              <ServiceMenu className="hidden md:block" />
+              <ServiceMenu />
               <Link
                 className="hidden text-lg font-bold text-[#0d274d] md:inline-flex"
                 href="/blog"
@@ -700,6 +706,7 @@ export default function Home() {
                 About
               </Link>
             </div>
+            <MobileNav active="home" />
 
             <div className="hidden items-center gap-4 lg:flex" dir="ltr">
               <Button

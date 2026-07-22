@@ -1,6 +1,7 @@
 import Link from "next/link";
 import TranslateWidget from "../TranslateWidget";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import MobileNav from "./MobileNav";
 import ServiceMenu from "./ServiceMenu";
 
 function LogoBadge() {
@@ -80,6 +81,11 @@ export function SiteHeader({ active = "blog" }) {
           className="ltr mx-auto flex min-h-[100px] max-w-6xl items-center justify-between gap-5 px-5"
           dir="ltr"
         >
+          <div className="relative h-16 w-16 shrink-0 self-center md:hidden">
+            <div className="absolute left-0 top-0 origin-top-left scale-50">
+              <LogoBadge />
+            </div>
+          </div>
           <div className="relative hidden w-36 self-stretch md:block">
             <div className="absolute -top-12 left-0">
               <LogoBadge />
@@ -101,6 +107,7 @@ export function SiteHeader({ active = "blog" }) {
               About
             </Link>
           </div>
+          <MobileNav active={active} />
           <div className="hidden items-center gap-4 lg:flex">
             <a
               className="inline-flex h-11 min-w-32 items-center justify-center gap-3 bg-[#0d274d] px-6 text-sm font-black text-[#ffd366]"
